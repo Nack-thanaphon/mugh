@@ -16,7 +16,7 @@ function render() {
             for (var i = 0; i < data.length; i++) {
                 $news = `
             <div class="items">
-                <img src="https://info-mugh.com/BOS/${data[i].image}"
+                <img src="https://info-mugh.com/bos/${data[i].image}"
                     alt="">
                 <h5 class="py-3">${data[i].name}&hellip;</h5>
                 <p class="py-3" >${data[i].date}</p>

@@ -1,10 +1,52 @@
-<?php include './template/include/header.php'; ?>
-<?php include './template/include/socialbutton.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--  -->
+    <?php
+
+    include "./database/connect.php";
+
+    if ($_SERVER['REQUEST_METHOD'] == "GET") {
+        if (isset($_GET["id"])) {
+            $stmt =  $conn->prepare("SELECT * FROM tbl_news WHERE n_id = '" . $_GET["id"] . "'");
+            $stmt->execute();
+            $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        }
+    }
+    ?>
+
+    <?php foreach ($result as $row) : ?>
+    <meta property="og:title" content="<?php echo $row['n_name']; ?>">
+    <meta property="og:image" content="https://info-mugh.com/bos/<?php echo $row['n_image']; ?>">
+
+    <?php endforeach; ?>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="./img/logo/logo.png" />
+    <link href="assets/css/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+
 <?php include './template/include/navbar.php'; ?>
 
 <body onload="singlenews();">
     <div class="container">
-        <div class="row py-5">
+        <div class="row py-4">
             <div class="col-12 p-0 m-0">
             </div>
             <div class="col-md-9">
@@ -29,11 +71,22 @@
                                 </i> จำนวนผู้อ่าน |</li><b id="news_views"></b> ครั้ง
                             </p>
                         </div>
+                        <div class="col-12 col-sm-6 text-right text-sm-left">
+
+
+
+
+                            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                            <div class="addthis_inline_share_toolbox_afjn py-2"></div>
+
+
+                        </div>
+
 
                     </div>
                     <div class="col-12 my-2 pb-5 p-0">
                         <div id="news_image" alt=""></div>
-                        <div class="col-12 sm-12 w-100 " id="news_detail"></div>
+                        <div class="col-12 sm-12 w-100 p-0 m-0 mt-5" id="news_detail"></div>
                     </div>
                 </article>
                 <div class="mt-3">
@@ -49,7 +102,6 @@
 
 
     </div>
-
 
     <script>
     function singlenews() {
@@ -85,21 +137,29 @@
                 id: id,
             },
             success: function(data) {
-
-                $('#news_title').html(data[0].n_name);
+                $('meta[name=title]').attr('content', data[0].n_name);
+                $('#news_title').html('<p class="p-0 m-0">' + data[0].n_name + '</p>');
                 $('#news_image').html(
                     '<img style="object-fit: cover; width:100%;"src="https://info-mugh.com/bos/' +
                     data[0].n_image + '"></img>');
                 $('#news_detail').html(data[0].n_detail);
                 $('#news_views').html(data[0].n_views);
+                console.log("good", err)
+
             },
+
             error: function(err) {
                 console.log("bad", err)
             }
         })
     })
     </script>
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-620dd9c449543115"></script>
+
+
     <?php
     include './template/include/script.php';
-    include "./template/include/footer.php"; ?>
+
+    ?>
 </body>

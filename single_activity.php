@@ -1,4 +1,3 @@
-<?php include './template/include/socialbutton.php'; ?>
 <?php include './template/include/navbar.php'; ?>
 
 <body onload="singlenews();">
