@@ -1,71 +1,25 @@
-<div id="activities">
-    <a href="./single_activity.php" class="actcard p-2 card mx-3">
-        <div class="card-left">
-            <p class="badge badge-pill badge-primary"><i class="fas fa-calendar"></i> 10.30-16.40</p>
-            <p class="h5">17 Dec 2021</p><br>
+<div class="row d-flex justify-content-between my-3 p-0 m-0">
+    <div class=" col-12 col-sm-12 p-1">
+        <div class=" col-12  m-0  p-sm-0 ">
+            <div class="row m-0 py-3  text-white p-2 t_header">
+                <div class="col-8 col-sm-8  p-0  m-auto text-left">
+                    <h5 id="title" class="text-uppercase p-0 m-0 ">ACTIVITY</h5>
+                </div>
+                <div class="col-4 col-sm-4 p-0  m-auto text-right  ">
+                    <a class="text-white" href="./all_activity.php"><i class="fas fa-plus"></i> See All</a>
+                </div>
 
-        </div>
-        <div class="card-right">
-            <div class="card-right-top">
-                <h4>Contrary to popular belief, .</h4>
-                <br>
-                <p><i class="fas fa-map-marker-alt"></i>
-                    Mahidol university,Thailand
-                </p>
             </div>
+            <div class="row m-0 p-0" id="news">
 
-        </div>
-    </a>
-    <a href="./single_activity.php" class="actcard p-2 card mx-3">
-        <div class="card-left">
-            <p class="badge badge-pill badge-primary"><i class="fas fa-calendar"></i> 10.30-16.40</p>
-            <p class="h5">17 Dec 2021</p><br>
-
-        </div>
-        <div class="card-right">
-            <div class="card-right-top">
-                <h4>Contrary to popular belief, .</h4>
-                <br>
-                <p><i class="fas fa-map-marker-alt"></i>
-                    Mahidol university,Thailand
-                </p>
             </div>
+        </div>
+
+    </div>
+    <div class=" col-12 col-sm-12 p-1">
+        <div id="activities" class="py-5">
+
 
         </div>
-    </a>
-    <a href="./single_activity.php" class="actcard p-2 card mx-3">
-        <div class="card-left">
-            <p class="badge badge-pill badge-primary"><i class="fas fa-calendar"></i> 10.30-16.40</p>
-            <p class="h5">17 Dec 2021</p><br>
-
-        </div>
-        <div class="card-right">
-            <div class="card-right-top">
-                <h4>Contrary to popular belief, .</h4>
-                <br>
-                <p><i class="fas fa-map-marker-alt"></i>
-                    Mahidol university,Thailand
-                </p>
-            </div>
-
-        </div>
-    </a>
-    <a href="./single_activity.php" class="actcard p-2 card mx-3">
-        <div class="card-left">
-            <p class="badge badge-pill badge-primary"><i class="fas fa-calendar"></i> 10.30-16.40</p>
-            <p class="h5">17 Dec 2021</p><br>
-
-        </div>
-        <div class="card-right">
-            <div class="card-right-top">
-                <h4>Contrary to popular belief, .</h4>
-                <br>
-                <p><i class="fas fa-map-marker-alt"></i>
-                    Mahidol university,Thailand
-                </p>
-            </div>
-
-        </div>
-    </a>
-
+    </div>
 </div>

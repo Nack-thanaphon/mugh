@@ -5,19 +5,16 @@
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner  h-50">
-            <div class="carousel-item active">
-                <img src="./img/Banner/MUGH1.png" class=" ">
-                <div class="carousel-caption d-none d-md-block ">
+        <div class="carousel-inner  h-50 slideshow" id="banner">
+            <!-- <div class="carousel-item active">
+                <a href="" target="blank">
+                    <img src="./img/Banner/MUGH1.png" class=" ">
+                    <div class="carousel-caption d-none d-md-block ">
 
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="./img/Banner/MUGH2.png" class=" ">
-                <div class="carousel-caption d-none d-md-block ">
+                    </div>
+                </a>
+            </div> -->
 
-                </div>
-            </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>

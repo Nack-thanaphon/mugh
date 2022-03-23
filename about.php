@@ -21,12 +21,15 @@
                         <h4 class="fst-italic text-center">Our Mission</h4>
                         <div class="nav flex-column nav-pills text-start" id="v-pills-tab" role="tablist"
                             aria-orientation="vertical">
-                            <a class="nav-link active " id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
-                                role="tab" aria-controls="v-pills-home" aria-selected="true">Who we are?</a>
-                            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
-                                role="tab" aria-controls="v-pills-profile" aria-selected="false">What we do?</a>
-                            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
-                                role="tab" aria-controls="v-pills-messages" aria-selected="false">Our Goal?</a>
+                            <a class="nav-link active text-reset text-uppercase " id="v-pills-home-tab"
+                                data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home"
+                                aria-selected="true">- Who we are</a>
+                            <a class="nav-link text-reset text-uppercase" id="v-pills-profile-tab" data-toggle="pill"
+                                href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
+                                aria-selected="false">- What we do</a>
+                            <a class="nav-link text-reset text-uppercase" id="v-pills-messages-tab" data-toggle="pill"
+                                href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
+                                aria-selected="false">- Our Goal</a>
 
                         </div>
                     </div>

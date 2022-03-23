@@ -9,7 +9,7 @@
                 <div class="col-12 col-sm-6 mx-auto pb-3 ">
                     <div class="row ">
                         <div class="col-12 col-sm-12 mx-auto pb-3 text-start">
-                            <img style="object-fit: cover; width:100%;" src="./img/logo/logo2.jpg" alt="">
+                            <img style="object-fit: cover; width:100%;" src="./img/logo2.jpg" alt="">
                             <div class="col-12 col-sm-12 p-0 my-3 ">
                                 <p>In recognition of contribution in healthcare industry as well as its dedication to
                                     improving
@@ -67,7 +67,7 @@
 
                     <p>
                         <i class="fas fa-envelope me-3"></i>
-                        aihd.mugh@gmail.com
+                        mugh.mahidol@gmail.com
                     </p>
                     <p><i class="fas fa-phone me-3"></i> 02-441-9040-3</p>
                     <p><i class="fas fa-print me-3"></i> 02-441-9044</p>

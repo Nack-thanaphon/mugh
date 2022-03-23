@@ -1,120 +1,66 @@
+<?php include './template/include/header.php'; ?>
 <?php include './template/include/navbar.php'; ?>
+<div class="container">
+    <div class="row p-0  pb-5">
+        <div class="col-md-9  mt-3">
+            <nav aria-label="">
+                <ol class="breadcrumb bg-transparent p-0 my-2">
+                    <li class="breadcrumb-item"><a href="./">หน้าหลัก</a></li>
+                    <li class="breadcrumb-item"><a href="#">Newsletter</a></li>
 
-<body onload="singlenews();">
-    <div class="container">
-        <div class="row py-5">
-            <div class="col-12 p-0 m-0">
-            </div>
-            <div class="col-md-9">
-                <nav aria-label="">
-                    <ol class="breadcrumb bg-transparent p-0 my-2">
-                        <li class="breadcrumb-item"><a href="#">หน้าหลัก</a></li>
-                        <li class="breadcrumb-item"><a href="#">กิจกรรม</a></li>
-                    </ol>
-                </nav>
-                <article id="blog-post" class="blog-post">
-                    <h3 id="news_title" class="blog-post-title my-3 mx-auto"></h3>
-                    <div class="row d-flex justify-space-between">
-                        <p>
-                        <div class="col-6 col-sm-8"> <i class="fas fa-calendar-day" aria-hidden="true"></i> January
-                            </li> 1, 2022 <br> by <a href="#">Admin</a>
+                </ol>
+            </nav>
+            <h1 class="pb-3">ACTIVITY</h1>
+            <div class="row">
+                <div class="col-12 col-md-4 pb-5">
+                    <img width="100%"
+                        src="https://images.unsplash.com/photo-1584359983106-ef9366f27454?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=364&q=80"
+                        alt="">
+                </div>
+                <div class="col-12 col-md-8">
+                    <h6>หัวข้อกิจกรรม : สุขภาพ/ความปลอดภัย</h6>
+                    <h3>ชื่อกิจกรรม : กิจกรมพัฒนาผู้เรียน</h3>
 
-                        </div>
-                        </p>
-                        <div class="col-6 col-sm-4 text-right">
-                            <p style="font-size: 0.8rem;">
-                                <i class="fas fa-eye" aria-hidden="true">
-                                </i> จำนวนผู้อ่าน |</li><b id="news_views"></b> ครั้ง
-                            </p>
-                        </div>
+
+                    <div class="py-4">
+                        <h4>รายละเอียดกิจกรรม :</h4>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus optio aliquam id tempora
+                            commodi
+                            pariatur. Neque, hic. Autem, voluptatum? Tenetur totam, fugit cum odit nesciunt ratione?
+                            Numquam
+                            at
+                            reprehenderit qui consequuntur, sapiente provident inventore, unde voluptas adipisci laborum
+                            non.
+                            Magnam id corrupti in. A cupiditate quidem corrupti sapiente, placeat facilis.</p>
+                    </div>
+
+                    <h5>ลิงค์กิจกรรม :<a href="https://mugh.or.th/" target="_blank">Student-Activity</a>
+                    </h5>
+                    <div>
+                        <button
+                            class="btn btn-badge badge-pill badge-success p-0 px-2 my-3 text-center">ดาวน์โหลด</button>
+
+                        <a href=""> LINK 1</a>
+
 
                     </div>
-                    <div class="col-12 my-2 pb-5 p-0">
-                        <div id="news_image" alt=""></div>
-                        <div class="col-12 sm-12 w-100 " id="news_detail"></div>
-                    </div>
-                </article>
-                <div class="mt-3">
-                    <a id="readmore" href="./" class="btn btn-primary p-sm-2 p-2">
-                        back </a>
+                    <h4>ติดต่อ : 02-441-9040-3</h4>
+
                 </div>
             </div>
 
-            <div class="col-md-3 d-none d-md-block">
-                <?php include './template/include/aside.php'; ?>
-            </div>
         </div>
 
 
+        <div class="col-md-3 d-none d-md-block">
+            <?php include './template/include/aside.php'; ?>
+        </div>
     </div>
 
 
-    <script>
-    function singlenews() {
-        var baseUrl = (window.location).href; // You can also use document.URL
-        var id = baseUrl.substring(baseUrl.lastIndexOf('=') + 1);
-        $.ajax({
-            type: "POST",
-            dataType: "json",
-            url: "https://www.info-mugh.com/api/news_viewscounter.php",
-            data: {
-                id: id,
-            },
-            success: function(data) {
-                console.log(data);
+</div>
 
-            },
-            error: function(err) {
-                console.log("bad", err)
+<?php
 
-            }
-        })
-
-    }
-
-    $(document).ready(function() {
-        var baseUrl = (window.location).href; // You can also use document.URL
-        var id = baseUrl.substring(baseUrl.lastIndexOf('=') + 1);
-        $.ajax({
-            type: "GET",
-            dataType: "json",
-            url: "https://www.info-mugh.com/api/singlenews.php",
-            data: {
-                id: id,
-            },
-            success: function(data) {
-                $('#title').html(data[0].n_name);
-                $('#news_title').html(data[0].n_name);
-                $('#news_image').html(
-                    '<img style="object-fit: cover; width:100%;" src="https://info-mugh.com/bos/' +
-                    data[0].n_image + '"></img>');
-                $('#news_detail').html(data[0].n_detail);
-                $('#news_views').html(data[0].n_views);
-
-            },
-            error: function(err) {
-                console.log("bad", err)
-
-            }
-        })
-
-    })
-
-
-
-
-    // var img = localStorage.getItem('success2');
-
-
-    // $('#news_title').html(localStorage.getItem('success'));
-    // $('#news_image').html(localStorage.getItem('success2'));
-
-
-    // console.log('retrievedObject: ', JSON.parse(img));
-    </script>
-
-    <?php
-
-    include './template/include/script.php';
-    include "./template/include/footer.php"; ?>
-</body>
+include './template/include/script.php';
+include "./template/include/footer.php"; ?>
