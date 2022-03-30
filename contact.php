@@ -1,6 +1,6 @@
-<?php include './template/include/header.php'; ?>
+<?php include './include/header.php'; ?>
 
-<?php include './template/include/navbar.php'; ?>
+<?php include './include/navbar.php'; ?>
 
 <div class="container">
     <div class="row card m-4 p-0  d-flex justify-content-between">
@@ -41,8 +41,9 @@
 
 
 
-
-
+<div class="d-none d-sm-block">
+    <?php include './include/footer.php'; ?>
+</div>
 <?php
-include './template/include/script.php';
-include "./template/include/footer.php"; ?>
+
+include 'include/script.php';

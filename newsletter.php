@@ -1,13 +1,13 @@
-<?php include './template/include/header.php'; ?>
+<?php include 'include/header.php'; ?>
 
-<?php include './template/include/navbar.php'; ?>
+<?php include 'include/navbar.php'; ?>
 
 <div class="container">
-    <div class="row my-5 p-0  d-flex justify-content-between">
+    <div class="row my-5 m-2 p-0   d-flex justify-content-between">
         <div class="col-12 col-md-7 card p-3 m-1">
 
             <h3 class="text-primary">จดหมายข่าว</h3>
-            <small class="text-secondary">Newsletter : Asean University Health Promotion Network</small>
+            <small class="text-secondary">Newsletter : Mahidol University Global Health</small>
             <div class="row my-4 m-0 p-0" id="news_list">
 
                 <table class="table table-bordered table-hover">
@@ -42,7 +42,7 @@
         </div>
 
         <div class="col-12 col-md-4 card p-3 m-1">
-            <?php include './template/include/aside.php'; ?>
+            <?php include 'include/aside.php'; ?>
         </div>
     </div>
 
@@ -53,5 +53,5 @@
 
 <?php
 
-include './template/include/script.php';
-include "./template/include/footer.php"; ?>
+include 'include/script.php';
+include "include/footer.php"; ?>

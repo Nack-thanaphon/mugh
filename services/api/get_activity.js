@@ -13,11 +13,10 @@ function activity() {
         data: {},
         success: function(data) {
 
-
             data = data.result;
             for (var i = 0; i < data.length; i++) {
                 $ac = `
-            <a href="./single_activity.php" class="actcard p-2 card mx-3">
+            <a href="./single_activity.php?event=${data[i].id}" class="actcard p-2 card mx-3">
                 <div class="card-left">
                         <p class="badge badge-pill badge-primary"><i class="fas fa-calendar"></i> ${data[i].start_time}-${data[i].end_time}</p>
                         <p class="h5">${data[i].end_date}</p><br>

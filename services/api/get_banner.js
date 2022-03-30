@@ -48,4 +48,5 @@ $(document).ready(() => {
         cssEase: 'linear'
     });
     $('.slideshow').slick('slickRemove');
+    // $(".slideshow").not('.slick-initialized').slick()
 });

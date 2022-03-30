@@ -18,17 +18,17 @@
 <nav class="navbar navbar-expand-md navbar-light bg-dark text-white  py-4" id="navbar-bg">
 
     <div class="container ">
-        <a class="navbar-brand " href="./">
+        <a class="navbar-brand d-flex justify-content-between" href="./">
             <!-- <img class="d-none d-sm-block" src="./img/logo/logo2.png" alt=""> -->
-            <img class="d-block" src="./img/logo.png" alt="">
-            <div class="navbar-detail  d-block pl-3  m-0">
+            <img width="50px" height="50px" class="d-block" src="./img/logo.png" alt="">
+            <div class="navbar-detail text-white pl-3  m-0">
                 <b class="p-0 m-0">MUGH</b><br>
                 <p class="p-0 m-0" style="font-size: 0.6rem;">Mahidol University Global Health</p>
             </div>
         </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse  d-flex-md d-flex-none justify-content-md-end " id="navbarNavDropdown">
@@ -37,12 +37,11 @@
                     <a class="nav-link text-white" href="about.php">Mission</span></a>
                 </li>
                 <li class="nav-item text-white">
-                    <a class="nav-link text-white" href="all_activity.php">Activities</a>
+                    <a class="nav-link text-white" href="activity.php">Activities</a>
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Download
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -53,7 +52,7 @@
                         <a class="dropdown-item" href="./img/file/HursManualversion2021_3.pdf" target="blank">Hurs
                             Manual(2021)</a>
                         <a class="dropdown-item" href="#">Research</a> -->
-                        <a class="dropdown-item" href="./all_newsletter.php">Newsletter</a>
+                        <a class="dropdown-item" href="newsletter.php">Newsletter</a>
                     </div>
                 </li>
                 <li class="nav-item text-white">
@@ -68,8 +67,9 @@
 </nav>
 <div class="bottom-bar p-1 m-0">
     <ul>
-        <li><a href="./">Home</a></li>
-        <li><a href="./all_newsletter.php">Newsletter</a></li>
-        <li><a href="./all_activity.php">Calendar</a></li>
+        <li class="d-none d-sm-block"><a href="./">Home</a></li>
+        <li><a href="newsletter.php">Newsletter</a></li>
+        <li><a href="activity.php">Calendar</a></li>
+        <li><a href="gallery.php">Gallery</a></li>
     </ul>
 </div>

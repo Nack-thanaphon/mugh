@@ -6,16 +6,14 @@
                 <div class="main-banner py-3 p-0">
                     <!-- Heading -->
 
-                    <h1>MUGH</h1>
-                    <h4 class="mb-4" style="font-size:1.2rem ;">Mahidol University Global Health</h4>
+                    <h1>AUN-HPN</h1>
+                    <h4 class="mb-4" style="font-size:1.2rem ;">Asean University Network - Health Promotion Network</h4>
 
                     <!-- Subheading -->
                     <p class="mb-4" style="font-size:0.8rem ;">
-                        In recognition of contribution in healthcare industry as well as its dedication to improving
-                        life and bringing better health to the society, Mahidol University Global Health (MUGH) was
-                        initiated in October 2012 with the aim to bridge the gap between interdisciplinary faculties and
-                        network with other universities and organizations at the national, regional and global levels in
-                        the context of global health
+                        AUN–HPN is a regional network of people and universities
+                        working towards a better and healthier society. HPN (Health Promotion Network)
+                        is a thematic network of AUN (ASEAN University Network).
                     </p>
                     <!-- Button -->
                     <div class="mt-3">

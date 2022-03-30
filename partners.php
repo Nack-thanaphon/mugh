@@ -1,5 +1,5 @@
-<?php include './template/include/header.php'; ?>
-<?php include './template/include/navbar.php'; ?>
+<?php include './include/header.php'; ?>
+<?php include './include/navbar.php'; ?>
 
 <body>
     <div class="container">
@@ -43,10 +43,10 @@
                                     <div class="col-12 col-md-6 p-0 m-0">
                                         <div class="tab-content">
                                             <div class=" tab-pane active" id="tabs-1" role="tabpanel">
-                                                <?php include "./template/pages/full_member.php"; ?>
+                                                <?php include "pages/full_member.php"; ?>
                                             </div>
                                             <div class=" tab-pane " id="tabs-2" role="tabpanel">
-                                                <?php include "./template/pages/ass_member.php"; ?>
+                                                <?php include "pages/ass_member.php"; ?>
                                             </div>
                                         </div>
                                     </div>
@@ -65,6 +65,6 @@
 
 
     <?php
-    include './template/include/script.php';
-    include "./template/include/footer.php"; ?>
+    include 'include/script.php';
+    include "./include/footer.php"; ?>
 </body>
