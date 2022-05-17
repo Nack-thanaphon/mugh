@@ -1,36 +1,29 @@
 <?php include './include/header.php'; ?>
 <?php include './include/navbar.php'; ?>
 
-<div class="container">
-    <div class="row my-5 m-2 p-0   d-flex justify-content-between">
+<div class="row m-0 p-0">
+    <div class="col-12 col-md-12 col-sm-12 card p-3 p-sm-5 text-sm-center">
+        <h1 class="text-primary font-weight-bold">เอกสาร</h1>
+        <small class="text-secondary">Document : Asean University Health Promotion Network</small>
+        <hr>
+        <div class="row my-4 m-0 p-0" id="news_list">
 
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col" width="80%">ชื่อเอกสาร</th>
+                        <th scope="col" width="10%">ชนิดไฟล์</th>
+                        <th scope="col" width="10%">ดาวน์โหลด</th>
+                    </tr>
+                </thead>
+                <tbody id="file_tbl">
 
-        <div class="col-12 col-md-7 card p-3 m-0">
+                </tbody>
+            </table>
 
-            <h3 class="text-primary">เอกสาร</h3>
-            <small class="text-secondary">Newsletter : Mahidol University Global Health</small>
-            <div class="row my-4 m-0 p-0" id="news_list">
-
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th scope="col" width="10%">Date</th>
-                            <th scope="col" width="50%">Document name</th>
-                            <th scope="col" width="40%">file</th>
-                        </tr>
-                    </thead>
-                    <tbody id="file_tbl">
-
-                    </tbody>
-                </table>
-
-            </div>
-        </div>
-
-        <div class="col-12 col-md-4 card p-3 ">
-            <?php include './include/aside.php'; ?>
         </div>
     </div>
+</div>
 
 
 </div>
@@ -41,7 +34,7 @@
         $.ajax({
             type: "GET",
             dataType: "json",
-            url: "https://www.info-mugh.com/api/get_download.php",
+            url: "https://www.info-aun-hpn.com/api/get_download.php",
             data: {},
         }).done(function(data) {
             console.log(data)
@@ -51,11 +44,11 @@
 
                 html +=
                     `<tr>
+                    <td class="text-left"><h6>${data[i].name}</h6></td>
                         <th scope="row"><span class="badge badge-pill badge-info">${data[i].type}</span></th>
-                        <td>${data[i].name}</td>
                         <td>
-                            <a class="btn-btn-success" href="https://info-mugh.com/bos/uploads/docs/${data[i].file}">
-                                <i class="fas fa-file"> Download</i>
+                            <a class="btn-btn-success" href="https://info-aun-hpn.com/bos/uploads/docs/${data[i].file}">
+                                <small><i class="fas fa-file"> ดาวน์โหลด</i></small>
                             </a>
                         </td>
             

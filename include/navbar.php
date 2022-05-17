@@ -65,11 +65,30 @@
         </div>
     </div>
 </nav>
-<div class="bottom-bar p-1 m-0">
-    <ul>
-        <li class="d-none d-sm-block"><a href="./">Home</a></li>
-        <li><a href="newsletter.php">Newsletter</a></li>
-        <li><a href="activity.php">Calendar</a></li>
-        <li><a href="gallery.php">Gallery</a></li>
-    </ul>
+
+<div class="onoffswitch3">
+    <input type="checkbox" name="onoffswitch3" class="onoffswitch3-checkbox" id="myonoffswitch3" checked>
+    <label class="onoffswitch3-label p-0 m-0" for="myonoffswitch3">
+        <span class="onoffswitch3-inner">
+            <span class="onoffswitch3-active">
+                <marquee class="scroll-text" behavior='scroll' direction='left' scrollamount='5'>
+                    <a href="google.com" class="mr-5">
+                        Greater :
+                        <span class="glyphicon glyphicon-forward">
+                            Welcome to Mugh | Mahidol University Global Health
+                        </span>
+                    </a>
+
+                    <a href="google.com" class="mr-5">
+                        Newupdate :
+                        <span class="glyphicon glyphicon-forward">
+                            คู่มือ Mugh ฉบับล่าสุด (อัพเดต 2022)
+                        </span>
+                    </a>
+                </marquee>
+                <span class="onoffswitch3-switch">BREAKING NEWS <span><i class="fas fa-power-off"></i></span></span>
+            </span>
+            <span class="onoffswitch3-inactive m-auto">SHOW<i class="fas fa-eye"></i></span></span>
+        </span>
+    </label>
 </div>

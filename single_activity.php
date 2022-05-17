@@ -42,7 +42,7 @@
         $.ajax({
             type: "GET",
             dataType: "json",
-            url: "https://www.info-mugh.com/api/singleactivity.php",
+            url: "https://www.info-aun-hpn.com/api/singleactivity.php",
             data: {
                 id: id,
             },
@@ -60,7 +60,7 @@
                 $('#e_time').append('เวลา :', data[0].start_time, '-', data[0].end_time);
                 // $('#news_title').html('<h3 class="p-0 m-0">' + data[0].n_name + '</h3>');
                 // $('#news_image').html(
-                //     '<img style="object-fit: cover; width:100%;"src="https://info-mugh.com/bos/' +
+                //     '<img style="object-fit: cover; width:100%;"src="https://info-aun-hpn.com/bos/' +
                 //     data[0].n_image + '"></img>');
                 // $('#news_detail').html(data[0].n_detail);
                 // $('#news_views').html(data[0].n_views);

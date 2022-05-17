@@ -39,7 +39,7 @@
         $.ajax({
             type: "GET",
             dataType: "json",
-            url: "https://www.info-mugh.com/api/single_image.php",
+            url: "https://www.info-aun-hpn.com/api/single_image.php",
             data: {
                 id: id,
             },
@@ -50,8 +50,8 @@
                     for (var i = 0; i < data.length; i++) {
                         html +=
                             `<div class="col-sm-3 col-md-4 mb-3">
-                        <a class="fancybox" data-fancybox="gallery" href="https://info-mugh.com/bos/uploads/${data[i].image}">
-                        <img width="100%" height="100%"  src="https://info-mugh.com/bos/uploads/${data[i].image}" alt=""/>
+                        <a class="fancybox" data-fancybox="gallery" href="https://info-aun-hpn.com/bos/uploads/${data[i].image}">
+                        <img width="100%" height="100%"  src="https://info-aun-hpn.com/bos/uploads/${data[i].image}" alt=""/>
                         </a>
                     </div>
                     `

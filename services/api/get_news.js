@@ -1,41 +1,46 @@
 var html, data;
-$(document).ready(function() {
+$(document).ready(function () {
     newsrender();
 })
 
 function newsrender() {
-
     $.ajax({
         type: "GET",
         dataType: "json",
-        url: "https://www.info-mugh.com/api/get_news_limit3.php",
+        url: "https://www.info-aun-hpn.com/api/get_news_limit3.php",
         data: {},
-        success: function(data) {
+        success: function (data) {
             data = data.result;
-            for (var i = 0; i < data.length; i++) {
-                $news = `
-            <div class=" col-12 col-md-4 p-3 m-0 my-1 news-card">
-                <a href="./single_news.php?id=${data[i].id}" data-id="${data[i].id}" id="singlenews"
-                class="btn col-12 p-0 m-0 "> 
-                 
-                         <img class="card-img-top" src="https://info-mugh.com/bos/${data[i].image}"alt="${data[i].name}">
-                 
-                </a>
-                <strong class="py-3 name">${data[i].name}</strong>
-
-                <p class="badge badge-pill badge-primary m-0 news-date ">${data[i].date}</p>
-           
-                
-            </div>
-                   
-       `
-                $('#news').append($news);
-            };
-
+            if (data != '') {
+                for (var i = 0; i < data.length; i++) {
+                    $news = `
+                    
+                    <div class="col-12  m-0 p-0 bg-white patt mb-2" id="singlenews" >
+                    <div class="row m-0 p-0">
+                        <div class="col-4 m-0 p-0" >
+                        <a href="./single_news.php?id=${data[i].id}" data-id="${data[i].id}" > 
+                        <img class="img_new" src="https://info-aun-hpn.com/bos/${data[i].image}"alt="${data[i].name}">
+                        </a>                        
+                        </div>
+                        <div class="col-8 m-0">
+                        <small class="badge badge-pill badge-primary m-0 ">${data[i].type}</small>
+                            <img width="30px" height="20px" src="https://www.dol.go.th/lampang/PublishingImages/Pages/default/new.gif"alt="${data[i].name}">
+                                <br>
+                                <small class="text-dark name">${data[i].name}</small>
+                    
+                                <small class="text-muted">${data[i].date}</small>
+                        </div>
+                    </div>
+                </div>
+           `
+                    $('#news').append($news);
+                };
+            } else {
+                $('#news').html('ไม่มีข้อมูล')
+            }
         },
-        error: function(err) {
-
-            $('#news').html('-ไม่มีข่าวสาร-');
+        error: function (err) {
+            consolelog(err)
         }
     })
 

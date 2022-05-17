@@ -7,7 +7,7 @@
         <div class="col-12 col-md-7 card p-3 m-1">
 
             <h3 class="text-primary">จดหมายข่าว</h3>
-            <small class="text-secondary">Newsletter : Mahidol University Global Health</small>
+            <small class="text-secondary">Newsletter : Asean University Health Promotion Network</small>
             <div class="row my-4 m-0 p-0" id="news_list">
 
                 <table class="table table-bordered table-hover">

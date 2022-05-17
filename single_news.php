@@ -22,7 +22,8 @@
 
     <?php foreach ($result as $row) : ?>
         <meta property="og:title" content="<?php echo $row['n_name']; ?>">
-        <meta property="og:image" content="https://info-mugh.com/bos/<?php echo $row['n_image']; ?>">
+        <meta name="keywords" content="<?php echo $row['n_name']; ?>">
+        <meta property="og:image" content="https://info-aun-hpn.com/bos/<?php echo $row['n_image']; ?>">
 
     <?php endforeach; ?>
 
@@ -61,7 +62,7 @@
 
                 </nav>
                 <article id="blog-post" class="blog-post">
-                    <h3 id="news_title" class="blog-post-title my-3 mx-auto"></h3>
+                    <h3 id="news_title"></h3>
                     <div class="row d-flex justify-space-between">
 
                         <div class="col-6 col-sm-8 ">
@@ -87,7 +88,7 @@
                     <hr class="py-2">
                     <div class="col-12 my-2 pb-5 p-0">
                         <div id="news_image" alt=""></div>
-                        <div class="col-12 sm-12 w-100 p-0 m-0 mt-5" id="news_detail"></div>
+                        <section id="news_detail"></section>
                     </div>
                 </article>
 
@@ -103,6 +104,7 @@
 
 
     </div>
+    <?php include 'include/script.php'; ?>
 
     <script>
         function singlenews() {
@@ -111,7 +113,7 @@
             $.ajax({
                 type: "POST",
                 dataType: "json",
-                url: "https://www.info-mugh.com/api/news_viewscounter.php",
+                url: "https://www.info-aun-hpn.com/api/news_viewscounter.php",
                 data: {
                     id: id,
                 },
@@ -133,19 +135,18 @@
             $.ajax({
                 type: "GET",
                 dataType: "json",
-                url: "https://www.info-mugh.com/api/singlenews.php",
+                url: "https://www.info-aun-hpn.com/api/singlenews.php",
                 data: {
                     id: id,
                 },
                 success: function(data) {
-
-                    $('#news_title').html('<h3 class="p-0 m-0">' + data[0].name + '</h3>');
+                    $('#news_title').html('<h3 class="blog-post-title my-3 mx-auto">' + data[0].n_name + '</h3>');
                     $('#news_image').html(
-                        '<img style="object-fit: cover; width:100%;"src="https://info-mugh.com/bos/' +
-                        data[0].image + '"></img>');
-                    $('#news_detail').html(data[0].detail);
-                    $('#news_views').html(data[0].view);
-                    $('#date').append(data[0].date);
+                        '<img style="object-fit: cover; width:100%;"src="https://info-aun-hpn.com/bos/' +
+                        data[0].n_image + '"></img>');
+                    $('#news_detail').html(data[0].n_detail);
+                    $('#news_views').html(data[0].n_views);
+                    $('#date').append(data[0].n_date);
 
                     console.log("good", err)
 
@@ -163,9 +164,5 @@
     <div class="d-none d-sm-block">
         <?php include './include/footer.php'; ?>
     </div>
-    <?php
 
-    include 'include/script.php';
-
-    ?>
 </body>
