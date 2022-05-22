@@ -8,7 +8,7 @@
         <div class="carousel-inner  h-50 slideshow" id="banner">
             <!-- <div class="carousel-item active">
                 <a href="" target="blank">
-                    <img src="./img/Banner/MUGH1.png" class=" ">
+                    <img src="./img/Banner/Mugh1.png" class=" ">
                     <div class="carousel-caption d-none d-md-block ">
 
                     </div>

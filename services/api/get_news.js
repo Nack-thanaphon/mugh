@@ -7,7 +7,7 @@ function newsrender() {
     $.ajax({
         type: "GET",
         dataType: "json",
-        url: "https://www.info-aun-hpn.com/api/get_news_limit3.php",
+        url: "https://www.info-Mugh.com/api/get_news_limit3.php",
         data: {},
         success: function (data) {
             data = data.result;
@@ -19,7 +19,7 @@ function newsrender() {
                     <div class="row m-0 p-0">
                         <div class="col-4 m-0 p-0" >
                         <a href="./single_news.php?id=${data[i].id}" data-id="${data[i].id}" > 
-                        <img class="img_new" src="https://info-aun-hpn.com/bos/${data[i].image}"alt="${data[i].name}">
+                        <img class="img_new" src="https://info-Mugh.com/bos/${data[i].image}"alt="${data[i].name}">
                         </a>                        
                         </div>
                         <div class="col-8 m-0">

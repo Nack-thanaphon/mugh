@@ -2,12 +2,13 @@
 <?php include './include/navbar.php'; ?>
 
 <div class="container">
-    <div class="row my-5 m-2 p-0  d-flex justify-content-between">
-        <div class="col-12 col-md-7 card p-3 mb-2">
+
+    <div class="row m-0 p-0">
+        <div class="col-12 col-md-12 col-sm-12 card p-3 p-sm-5 text-sm-center">
 
             <div class="py-3">
-                <h4 id="title">ชื่ออัลบั้ม :</h4>
-                <h6 id="date">วันเดือนปี :</h6>
+                <h4 id="title">ชื่ออัลบั้ม : </h4>
+                <h6 id="date">วันเดือนปี : </h6>
             </div>
 
 
@@ -16,15 +17,6 @@
 
                 </div>
             </div>
-        </div>
-
-
-
-
-
-
-        <div class="col-12 col-md-4 card p-3 ">
-            <?php include './include/aside.php'; ?>
         </div>
     </div>
 </div>
@@ -39,7 +31,7 @@
         $.ajax({
             type: "GET",
             dataType: "json",
-            url: "https://www.info-aun-hpn.com/api/single_image.php",
+            url: "https://www.info-Mugh.com/api/single_image.php",
             data: {
                 id: id,
             },
@@ -50,13 +42,13 @@
                     for (var i = 0; i < data.length; i++) {
                         html +=
                             `<div class="col-sm-3 col-md-4 mb-3">
-                        <a class="fancybox" data-fancybox="gallery" href="https://info-aun-hpn.com/bos/uploads/${data[i].image}">
-                        <img width="100%" height="100%"  src="https://info-aun-hpn.com/bos/uploads/${data[i].image}" alt=""/>
+                        <a class="fancybox" data-fancybox="gallery" href="https://info-Mugh.com/bos/uploads/${data[i].image}">
+                        <img width="100%" height="100%"  src="https://info-Mugh.com/bos/uploads/${data[i].image}" alt=""/>
                         </a>
                     </div>
                     `
-                        $('#title').html(data[i].name);
-                        $('#date').html(data[i].date);
+                        $('#title').append(data[i].name);
+                        $('#date').append(data[i].date);
                     }
                     $('#gallery').append(html);
                 } else {

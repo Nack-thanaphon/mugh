@@ -1,23 +1,10 @@
-$(document).ready(() => {
-
-    $('#activities').slick({
-        autoplay: true,
-        autoplaySpeed: 2500,
-        arrows: true,
-        prevArrow: '<button type="button" class="slick-prev"></button>',
-        nextArrow: '<button type="button" class="slick-next"></button>',
-        centerMode: true,
-        slidesToShow: 1,
-
-    });
-});
 
 //End Nav Slidepicture
 
 // To top Button
 var btn = $('#button');
 
-$(window).scroll(function() {
+$(window).scroll(function () {
     if ($(window).scrollTop() > 300) {
         btn.addClass('show');
     } else {
@@ -30,7 +17,7 @@ $(window).scroll(function() {
 
 // google map
 
-btn.on('click', function(e) {
+btn.on('click', function (e) {
     e.preventDefault();
     $('html, body').animate({ scrollTop: 0 }, '300');
 });
@@ -58,8 +45,8 @@ function initMap() {
 function googleTranslateElementInit() {
     new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'th,en,', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false }, 'google_translate_element');
 }
-$('document').ready(function() {
-    $("#google_translate_element").on("click", function() {
+$('document').ready(function () {
+    $("#google_translate_element").on("click", function () {
         // Change font family and color
         $("iframe")
             .contents()
@@ -92,13 +79,13 @@ $('document').ready(function() {
             .contents()
             .find(".goog-te-menu2-item div")
             .hover(
-                function() {
+                function () {
                     $(this)
                         .css("background-color", "#4385F5")
                         .find("span.text")
                         .css("color", "white");
                 },
-                function() {
+                function () {
                     $(this)
                         .css("background-color", "white")
                         .find("span.text")
@@ -132,15 +119,9 @@ $('document').ready(function() {
 
 
 
-$(document).ready(function() {
-    setInterval(function() {
+$(document).ready(function () {
+    setInterval(function () {
         $(".hero-slider .slider img").toggleClass("banner").toggleClass("scale-animation");
     }, 6000);
 });
 
-// const searchButton = document.getElementById('search-button');
-// const searchInput = document.getElementById('search-input');
-// searchButton.addEventListener('click', () => {
-//     const inputValue = searchInput.value;
-//     alert(inputValue);
-// });

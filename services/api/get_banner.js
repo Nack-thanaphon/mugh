@@ -1,6 +1,6 @@
 var html, data;
 
-$(document).ready(function() {
+$(document).ready(function () {
     banner();
 })
 
@@ -9,16 +9,16 @@ function banner() {
     $.ajax({
         type: "GET",
         dataType: "json",
-        url: "https://www.info-aun-hpn.com/api/get_banner.php",
+        url: "https://www.info-Mugh.com/api/get_banner.php",
         data: {},
-        success: function(data) {
+        success: function (data) {
             data = data.result;
             if (data != '') {
                 for (var i = 0; i < data.length; i++) {
                     $bn = `
                     <div class="carousel-item active">
                     <a href="${data[i].link}" target="blank">
-                        <img src="https://info-aun-hpn.com/bos/uploads/banner/${data[i].image}" class=" ">
+                        <img src="https://info-Mugh.com/bos/uploads/banner/${data[i].image}" class=" ">
                         <div class="carousel-caption d-none d-md-block">
     
                         </div>
@@ -31,7 +31,7 @@ function banner() {
                 $('#banner').html('-ไม่มีข่าวสาร-');
             }
         },
-        error: function(err) {
+        error: function (err) {
 
             console.log("bad", err)
         }

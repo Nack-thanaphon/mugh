@@ -6,7 +6,7 @@
                 <div class="main-banner py-3 p-0">
                     <!-- Heading -->
 
-                    <h1>AUN-HPN</h1>
+                    <h1>Mugh</h1>
                     <h4 class="mb-4" style="font-size:1.2rem ;">Asean University Network - Health Promotion Network</h4>
 
                     <!-- Subheading -->

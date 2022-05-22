@@ -6,9 +6,9 @@
     <div class="row card m-4 p-0  d-flex justify-content-between">
         <div class="col-12 col-md-12 mb-3 p-3 text-center">
             <h1 class="text-primary">ติดต่อเรา</h1>
-            <small class="text-secondary">Mahidol University Global Health</small>
+            <small class="text-secondary">Asean University Health Promotion Network</small>
         </div>
-        <div class="col-12 col-md-12 mx-auto  p-2  ">
+        <div class="col-12 col-md-12 mx-auto  p-1  ">
             <div class="row m-0 p-0">
                 <div class="col-12 col-md-4 mb-2">
                     <p><i class="fas fa-home me-3"></i> ASEAN Institute for Health Development, <br>
@@ -20,7 +20,7 @@
                 <div class="col-12 col-md-4 mb-2">
                     <p>
                         <i class="fas fa-envelope  my-1"> EMAIL</i><br>
-                        aunhpn@mahidol.ac.th <br>
+                        mugh@mahidol.ac.th <br>
                         thiprada.kon@mahidol.ac.th <br>
                         jariya.srk@mahidol.ac.th
                     </p>
@@ -41,9 +41,8 @@
 
 
 
-<div class="d-none d-sm-block">
-    <?php include './include/footer.php'; ?>
-</div>
-<?php
 
+
+<?php
 include 'include/script.php';
+include "./include/footer.php"; ?>

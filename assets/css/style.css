@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400&family=Prompt:ital,wght@1,200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-
-/* reset browser */
+@font-face {
+    font-family:RSU_light ;
+    src: url(../font/RSU_Regular.ttf);
+  }
 
 * {
     margin: 0%;
@@ -22,11 +22,12 @@
 }
 
 body {
-    background-color: #F4F4F4;
-    font-family: 'Noto Sans Thai', sans-serif !important;
-    font-family: 'Quicksand', sans-serif;
+    background-color: #f0f0f0;
+    font-family:RSU_light ;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
     top: 0px !important;
-    /* background-image: url('https://uezkci.stripocdn.email/content/guids/CABINET_8b2a2d2bd91c13d47222717d8a1897e1/images/cubes.png'); */
     background-position: center;
     background-size: auto;
     background-repeat: repeat;
@@ -38,19 +39,35 @@ body {
 #navbar-bg {
     background-color: var(--third) !important;
 }
-.main_card_bg{
-    background-color: rgba(2, 2, 2,0.5);
-}
-.main_card{
-   
-    background-color: rgba(2, 2, 2);
-    background-image: url('https://t3.ftcdn.net/jpg/03/02/38/66/360_F_302386659_pDdxdrMWAmRSRpMnnOFACei0YLV5rttW.jpg');
+
+.banner-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: auto;
+    background-color: #666666;
+    background-image: url('https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+#readmore {
+    width: 200px;
+    border-radius: 30px;
+    background-color: var(--third);
+    border: none;
+}
 
+#readmore:hover {
+    background-color: var(--secound);
+}
+
+.main-banner h1 {
+    color: var(--main);
+    font-size: 3.5rem;
+}
 
 @media (max-width: 991px) {
     .banner-area {
@@ -80,35 +97,6 @@ body {
 
 
 /* bottom bar */
-
-.bottom-bar {
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: var(--secound);
-    color: white;
-}
-
-.bottom-bar ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: white;
-    margin: 0;
-}
-
-.bottom-bar a {
-    color: white;
-    text-decoration: none;
-}
-
-.bottom-bar li {
-    list-style: none;
-    padding: 3px 20px;
-}
-
 
 /* bottom bar */
 
@@ -249,13 +237,13 @@ body>#overlay {
 }
 
 .goog-te-menu-value:before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: 'Choose Language';
+   
+    font-weight: 200;
+    content: 'Language';
     /* content: 'Translate'; */
     margin-right: 5px;
     font-size: 1rem;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .goog-te-menu-value span:nth-child(1) {
@@ -444,73 +432,44 @@ body>#overlay {
     text-overflow: ellipsis;
 }
 
-.items img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    margin-bottom: 10px;
-    transition: .2s;
-}
+
 
 .slick-prev,
 .slick-next {
     display: none !important;
 }
 
-.news-card {
-    overflow: hidden;
-    height: auto;
-    transition: .3s;
-}
 
-.news-date {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-}
-
-.news-card img {
-    position: relative;
-    width: 100%;
-    object-fit: cover;
-    height: 250px;
-}
-
-.news-card:hover {
-    transform: scale(1.1);
-}
 
 .news-card__text-wrapper {
     padding: 0;
 }
 
 #singlenews{
-    overflow: hidden;
-    
-    }
-    #singlenews .img_new{
-        width: 100%;
-        height: 100%;
-       object-fit: cover;
-       transition: 0.3s;
-      
-    }
-    #singlenews .img_new:hover{
-        transform: scale(1.1);
-    }
-    
-    
-    .name {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        /* number of lines to show */
-        line-clamp: 2;
-        -webkit-box-orient: vertical;
-    }
-    
+overflow: hidden;
 
+}
+#singlenews .img_new{
+    width: 100%;
+    height: 100%;
+   object-fit: cover;
+   transition: 0.3s;
+  
+}
+#singlenews .img_new:hover{
+    transform: scale(1.1);
+}
+
+
+.name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
 
 .news-card-all img {
     width: 100%;
@@ -526,17 +485,13 @@ body>#overlay {
     transform: scale(1.1);
 }
 
-.download-card {
-    position: relative;
+#download li{
+    list-style: none;
+}
+#activity li{
+    list-style: none;
 }
 
-.download-type {
-    position: absolute;
-}
-
-.load_more {
-    border-radius: 20px;
-}
 
 .carousel-item img {
     height: fit-content;
@@ -755,7 +710,7 @@ body>#overlay {
 }
 
 footer {
-    background-color: var(--third);
+    background-color: var(--secound);
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -764,12 +719,13 @@ footer a {
 }
 
 footer p {
-    color: #fefefe;
+  
     font-weight: 400;
+   
 }
 
 footer b {
-    color: #3059fb !important;
+
     padding: 0%;
 }
 
@@ -779,8 +735,8 @@ footer h6 {
 }
 
 #footer-social {
-    color: white !important;
-    background-color: var(--secound);
+    /* color: white !important; */
+    background-color: var(--third);
 }
 
 .tabs-left {
@@ -904,35 +860,6 @@ footer h6 {
     overflow: hidden;
 }
 
-.actcard {
-    display: flex;
-    flex-direction: row;
-    background-color: transparent !important;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    width: 850px;
-    margin: 10px 20px;
-    height: auto;
-    border-radius: 10px;
-    border: none;
-}
-
-.actcard {
-    text-decoration: none !important;
-    color: #000;
-}
-
-.card-left {
-    float: left;
-    width: 30%;
-    text-align: center;
-}
-
-.card-right {
-    width: 60%;
-    float: right;
-}
 
 @media (max-width: 991px) {
     .card-img-top {
@@ -969,6 +896,7 @@ footer h6 {
         font-size: 0.8rem;
     }
 }
+
 
 #news_detail img {
     height: auto;
@@ -1015,6 +943,16 @@ footer h6 {
     color: var(--main);
     text-decoration: none;
 }
+@counter-style thumbs {
+    system: cyclic;
+    symbols: "\1F4CC";
+    suffix: " ";
+}
+
+.member ul {
+   list-style: thumbs;
+ 
+}
 
 .view_more {
     width: 120px;
@@ -1056,13 +994,41 @@ footer h6 {
     margin: 20px auto;
 }
 
+.main_card{
+   
+    background-color: rgba(2, 2, 2);
+    background-image: url('https://t3.ftcdn.net/jpg/03/02/38/66/360_F_302386659_pDdxdrMWAmRSRpMnnOFACei0YLV5rttW.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.member_card{
+    background-color: rgba(2, 2, 2);
+    background-image: url('https://img.freepik.com/free-vector/solidarity-concept-illustration_114360-6286.jpg?t=st=1651978307~exp=1651978907~hmac=12927bd0bca4b83f0db5e703e182f98cae74206684afe25d9b038c50734ec732&w=900');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about_card{
+    background-color: rgba(2, 2, 2);
+    background-image: url('https://img.freepik.com/free-vector/personal-goals-concept-illustration_114360-5616.jpg?t=st=1651978212~exp=1651978812~hmac=5de9ead876e8d0a6e8b945b8c4f262755cf906d850e61ffb5aaa412aac823f63&w=740');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main_card_bg{
+    background-color: rgba(2, 2, 2,0.5);
+}
+
 
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 .onoffswitch3
 {
-    background-color: var(--secound);
+    background-color:var(--main);
     color: white;
     position: relative; 
     -webkit-user-select:none; 
@@ -1101,11 +1067,9 @@ footer h6 {
     height: 30px; 
     padding: 0; 
     line-height: 30px;
-
     font-size: 14px; 
     color: white; 
-    font-family: 'Montserrat', sans-serif; 
-    font-weight: bold;
+
     
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
@@ -1162,7 +1126,25 @@ footer h6 {
 .scroll-text a {
     color: #fefefefe;
 }
-
-marquee{
-    
+.dataTables_length{
+   display: flex;
+   justify-content: flex-start;
 }
+.dataTables_filter{
+    display: flex;
+    justify-content: flex-end;
+ }
+
+.dataTables_info{
+    display: flex;
+    justify-content: flex-start;
+ }
+
+ @media screen and (max-width:768px) {
+    #g_table_length label {
+         display: none !important;
+     }
+     #g_table_info { 
+         display: none !important;
+     }
+ }

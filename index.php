@@ -10,10 +10,10 @@
                     <div class="col-12 col-sm-12  main_card">
                         <div class="row main_card_bg ">
                             <div class="col-12 p-4 p-sm-5 text-white  ">
-                                <h1 class="  font-weight-bold ">MUGH</h1>
+                                <h1 class="  font-weight-bold ">Mugh</h1>
                                 <h5>Mahidol University Global Health</h5>
                                 <p class="my-4"> In recognition of contribution in healthcare industry as well as its dedication to improving
-                                    life and bringing better health to the society, Mahidol University Global Health (MUGH) was
+                                    life and bringing better health to the society, Mahidol University Global Health (Mugh) was
                                     initiated in October 2012 with the aim to bridge the gap between interdisciplinary faculties and
                                     network with other universities and organizations at the national, regional and global levels in
                                     the context of global health</p>

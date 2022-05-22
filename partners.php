@@ -12,7 +12,7 @@
                         <div class="row  p-0 m-0">
                             <div class="col-12 p-0 m-0">
                                 <h1 class="text-uppercase">Our Member</h1>
-                                <p>ASEAN University Network – Health Promotion Network (AUN–HPN)</p>
+                                <p>Mahidol University Global Health (MUGH) (AUN–HPN)</p>
                                 <!-- <nav aria-label="">
                                     <ol class="breadcrumb bg-transparent p-0 my-2">
                                         <li class="breadcrumb-item"><a href="./">หน้าหลัก</a></li>
@@ -34,8 +34,6 @@
                                 </ul><!-- Tab panes -->
                             </div>
                             <div class="col-12 col-md-12 p-2 m-0 card">
-
-
                                 <div class="row p-0 m-0">
                                     <div class="col-12 col-md-6 p-sm-2 p-0 d-sm-block d-none">
                                         <div id="map"></div>

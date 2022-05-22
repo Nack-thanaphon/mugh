@@ -2,35 +2,27 @@
 <?php include './include/navbar.php'; ?>
 
 <div class="container">
-    <div class="row my-5 m-2 p-0  d-flex justify-content-between">
-        <div class="col-12 col-md-7 card p-3 mb-2">
 
+    <div class="row m-0 p-0">
+        <div class="col-12 col-md-12 col-sm-12 card p-3 p-sm-5 text-sm-center">
             <h6 id="e_type" class="text-secondary"> </h6>
+            <h2 class="text-primary font-weight-bold" id="e_title"></h2>
+            <small id="e_time">เวลา : </small>
+            <small id="e_date" class="">วัน เดือน ปี : </small>
 
-
-            <h3 id="e_title" class="text-primary py-3"></h3>
-
-            <div class="py-3">
-                <h4>รายละเอียดกิจกรรม :</h4>
-                <p id="e_detail">
-
-                </p>
+            <hr>
+            <div class="py-3 text-left">
+                <h5 class="text-primary">รายละเอียดกิจกรรม :</h5>
+                <p id="e_detail" class="py-3"></p>
+                <h5 class="text-primary">สถานที่ :</h5>
+                <p id="e_address" class="py-3">
+                <h5 class="text-primary">เอกสารดาวน์โหลด :</h5>
+                <div id="e_link"></div>
             </div>
 
-            <div class="py-1">
-                <b id="e_date"></b><br>
-                <b id="e_time"></b>
-                <p id="e_detail">
 
-                </p>
-            </div>
-            <h5 id="e_link">
-            </h5>
         </div>
 
-        <div class="col-12 col-md-4 card p-3  d-none d-sm-block">
-            <?php include './include/aside.php'; ?>
-        </div>
     </div>
 </div>
 
@@ -42,30 +34,27 @@
         $.ajax({
             type: "GET",
             dataType: "json",
-            url: "https://www.info-aun-hpn.com/api/singleactivity.php",
+            url: "https://www.info-Mugh.com/api/single_activity.php",
             data: {
                 id: id,
             },
             success: function(data) {
 
                 data = data.result;
-                console.log(data)
+                let link = data[0].link;
 
-                $('#e_type').append("หัวข้อกิจกรรม : ", data[0].type);
-                $('#e_title').append("ชื่อกิจกรรม : ", data[0].title);
+                if (link !== '') {
+                    $('#e_link').html('<a href="' + link + '" class="btn btn-success" target="blank">ไปที่ลิงค์นี้</a>');
+                } else {
+                    $('#e_link').html('<small>ไม่มีข้อมูล</small>');
+
+                }
+                $('#e_type').append(data[0].type);
+                $('#e_title').append(data[0].title);
                 $('#e_detail').append(data[0].detail);
-                $('#e_link').append('ลิงค์กิจกรรม :<a href="' + data[0].link +
-                    '" target="_blank">Click me</a>');
-                $('#e_date').append('วันเดือนปี :', data[0].end_date);
-                $('#e_time').append('เวลา :', data[0].start_time, '-', data[0].end_time);
-                // $('#news_title').html('<h3 class="p-0 m-0">' + data[0].n_name + '</h3>');
-                // $('#news_image').html(
-                //     '<img style="object-fit: cover; width:100%;"src="https://info-aun-hpn.com/bos/' +
-                //     data[0].n_image + '"></img>');
-                // $('#news_detail').html(data[0].n_detail);
-                // $('#news_views').html(data[0].n_views);
-                // console.log("good", err)
-
+                $('#e_date').append(data[0].end_date);
+                $('#e_time').append(data[0].start_time, '-', data[0].end_time);
+                $('#e_address').append(data[0].address);
             },
 
             error: function(err) {

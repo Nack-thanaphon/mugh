@@ -20,9 +20,9 @@
                     <div class="bg-dark p-3 text-white ">
                         <h4 class="fst-italic text-center">Our Mission</h4>
                         <div class="nav flex-column nav-pills text-start" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                            <a class="nav-link active " id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Who we are?</a>
-                            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">What we do?</a>
-                            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Our Goal?</a>
+                            <a class="nav-link active " id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Who we are</a>
+                            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">What we do</a>
+                            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Our Goal</a>
 
                         </div>
                     </div>
@@ -53,7 +53,7 @@
 
             <div class="tab-pane fade p-3" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                 <article>
-                    <h2 class="blog-post-title text-uppercase" id="Whoweare">Who we are?</h2>
+                    <h2 class="blog-post-title text-uppercase" id="Whoweare">Who we are</h2>
 
                     <li><b>สร้างขีดความสามารถ</b></li>
                     Global health related academic degree programs, trainings and workshops are our vehicle to

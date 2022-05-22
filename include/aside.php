@@ -45,7 +45,7 @@
         $.ajax({
             type: "GET",
             dataType: "json",
-            url: "https://www.info-aun-hpn.com/api/news_aside.php",
+            url: "https://www.info-Mugh.com/api/news_aside.php",
             data: {},
             success: function(data) {
                 data = data.result;
@@ -54,7 +54,7 @@
             <a href="./single_news.php?id=${data[i].id}" class="text-primary" style="text-decoration: none;">    
             <div class="row p-0 m-0 my-2" id="news_update">
             <div class="col-3  p-0 m-auto">
-            <img class="mr-1 m-0  w-100" width="100%" height="50px"src="https://www.info-aun-hpn.com/bos/${data[i].image}"alt="">
+            <img class="mr-1 m-0  w-100" width="100%" height="50px"src="https://www.info-Mugh.com/bos/${data[i].image}"alt="">
             </div>
             <div class="col-9 m-0 pl-1 text-start">
                 <h6 class="p-0 m-0 name">${data[i].name}</h6>

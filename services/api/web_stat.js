@@ -1,14 +1,14 @@
-$(document).ready(function() {
+$(document).ready(function () {
     let ip = $('#web_static').val();
 
     $.ajax({
         type: "POST",
         dataType: "JSON",
-        url: "https://www.info-mugh.com/api/get_ip.php",
+        url: "https://www.info-Mugh.com/api/get_ip.php",
         data: {
             ip: ip,
         },
-    }).done(function(data) {
+    }).done(function (data) {
         console.log(ip)
     })
 })

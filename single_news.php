@@ -18,13 +18,16 @@
             $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
         }
     }
+
+
+
     ?>
 
     <?php foreach ($result as $row) : ?>
         <meta property="og:title" content="<?php echo $row['n_name']; ?>">
+        <title>Mugh | <?php echo $row['n_name']; ?></title>
         <meta name="keywords" content="<?php echo $row['n_name']; ?>">
-        <meta property="og:image" content="https://info-aun-hpn.com/bos/<?php echo $row['n_image']; ?>">
-
+        <meta property="og:image" content="https://info-Mugh.com/bos/<?php echo $row['n_image']; ?>">
     <?php endforeach; ?>
 
 
@@ -43,66 +46,49 @@
 <?php include './include/navbar.php'; ?>
 
 <body onload="singlenews();">
-    <div class="container">
-        <div class="row py-4">
-
-            <div class="col-md-9 mx-auto">
+    <div class="container-fluid p-0">
+        <div class="row p-0 m-1 d-flex justify-content-between">
+            <div class="col-12 col-md-8 p-sm-3 p-1  my-3">
                 <nav aria-label="">
-                    <div class="row d-none d-sm-block">
+                    <div class="row m-0 p-0 d-none d-sm-block">
                         <div class="col-8">
                             <ol class="breadcrumb bg-transparent p-0 my-2">
                                 <li class="breadcrumb-item"><a href="./">หน้าหลัก</a></li>
                                 <li class="breadcrumb-item"><a href="#">ข่าวสาร</a></li>
                             </ol>
                         </div>
-                        <div class="col-4 text-right d-sm-none d-block ">
 
-                        </div>
                     </div>
-
                 </nav>
+                <h2 class="text-primary font-weight-bold">ข่าวสารประจำเดือน</h2>
+                <small class="text-secondary">Newsupdate : Asean University Health Promotion Network</small>
+                <hr>
                 <article id="blog-post" class="blog-post">
                     <h3 id="news_title"></h3>
-                    <div class="row d-flex justify-space-between">
-
-                        <div class="col-6 col-sm-8 ">
-                            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                    <div class="row m-0 p-0 d-flex justify-space-between">
+                        <div class="col-12 col-sm-9 ">
                             <div class="addthis_inline_share_toolbox_4p75"></div>
                         </div>
 
-                        <div class="col-6 col-sm-4 text-right">
-                            <p class="badge badge-pill badge-primary text-white p-1">
-                                <i class="fas fa-calendar-day" aria-hidden="true">
-                                </i>
-                                <i id="date"></i>
-
-                            </p>
-                            <p class="p-0 m-0 " style="font-size: 0.8rem;">
-                                <i class="fas fa-eye p-0 m-0 pr-2">
-                                </i>
-                                <i id="news_views"></i>
-                                |ครั้ง
-                            </p>
+                        <div class="col-12 col-sm-3 text-right">
+                            <small id="date"></small><br>
+                            <small class="p-0 m-0 " style="font-size: 0.8rem;">
+                                เข้าชม
+                                <span id="news_views"></span> ครั้ง
+                            </small>
                         </div>
                     </div>
                     <hr class="py-2">
-                    <div class="col-12 my-2 pb-5 p-0">
+                    <div class="col-12 my-2 p-0">
                         <div id="news_image" alt=""></div>
-                        <section id="news_detail"></section>
+                        <div id="news_detail" class="my-4"></div>
                     </div>
                 </article>
-
-                <div class="row p-0 m-0 d-flex justify-content-end ">
-                    <a class="view_more text-reset" id="news_back" href="./">
-                        <h4>Back</h4>
-                    </a>
-                </div>
-
             </div>
-
+            <div class="col-12 col-md-4  p-3 m-0 ">
+                <?php include './include/aside.php' ?>
+            </div>
         </div>
-
-
     </div>
     <?php include 'include/script.php'; ?>
 
@@ -113,17 +99,15 @@
             $.ajax({
                 type: "POST",
                 dataType: "json",
-                url: "https://www.info-aun-hpn.com/api/news_viewscounter.php",
+                url: "https://www.info-Mugh.com/api/news_viewscounter.php",
                 data: {
                     id: id,
                 },
                 success: function(data) {
                     console.log(data);
-
                 },
                 error: function(err) {
                     console.log("bad", err)
-
                 }
             })
 
@@ -135,14 +119,14 @@
             $.ajax({
                 type: "GET",
                 dataType: "json",
-                url: "https://www.info-aun-hpn.com/api/singlenews.php",
+                url: "https://www.info-Mugh.com/api/single_news.php",
                 data: {
                     id: id,
                 },
                 success: function(data) {
                     $('#news_title').html('<h3 class="blog-post-title my-3 mx-auto">' + data[0].n_name + '</h3>');
                     $('#news_image').html(
-                        '<img style="object-fit: cover; width:100%;"src="https://info-aun-hpn.com/bos/' +
+                        '<img style="object-fit: cover; width:100%;"src="https://info-Mugh.com/bos/' +
                         data[0].n_image + '"></img>');
                     $('#news_detail').html(data[0].n_detail);
                     $('#news_views').html(data[0].n_views);
