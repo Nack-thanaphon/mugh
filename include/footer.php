@@ -18,11 +18,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <!-- Grid column -->
-
+           
             <!-- Grid column -->
             <div class="col-12 col-sm-2 mx-auto pb-3  text-align-start ">
                 <!-- Links -->

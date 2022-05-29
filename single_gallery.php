@@ -38,6 +38,7 @@
             success: function(resp) {
                 data = resp.result;
                 if (data != '') {
+
                     var html = '';
                     for (var i = 0; i < data.length; i++) {
                         html +=
@@ -47,8 +48,9 @@
                         </a>
                     </div>
                     `
-                        $('#title').append(data[i].name);
-                        $('#date').append(data[i].date);
+
+                        $('#title').html(data[i].name);
+                        $('#date').html(data[i].date);
                     }
                     $('#gallery').append(html);
                 } else {
