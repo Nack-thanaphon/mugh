@@ -18,7 +18,7 @@
                     </div>
                 </div>
             </div>
-           
+
             <!-- Grid column -->
             <div class="col-12 col-sm-2 mx-auto pb-3  text-align-start ">
                 <!-- Links -->
@@ -48,10 +48,9 @@
                 <p>
 
                     Mugh@mahidol.ac.th <br>
-                    thiprada.kon@mahidol.ac.th <br>
-                    jariya.srk@mahidol.ac.th
+                    sarunya.pol@mahidol.ac.th
                 </p>
-                <p><i class="fas fa-phone me-3"></i> +662-4419040-3 Ext.72</p>
+                <p><i class="fas fa-phone me-3"></i> +662-4419040-3 Ext.58</p>
                 <p><i class="fas fa-print me-3"></i> 02-441-9044</p>
             </div>
             <!-- Grid column -->

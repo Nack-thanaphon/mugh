@@ -4,7 +4,7 @@
             <div class="col-6 p-2 my-auto text-left ">
                 <a class="text-white" href="tel:+662-4419044">
                     <i class="fas fa-phone-alt">
-                        +662-441-9044</i>
+                    +024419040-3 ext.58</i>
                 </a>
             </div>
             <div class="col-6 p-0 my-auto text-right">
