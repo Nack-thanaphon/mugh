@@ -14,7 +14,7 @@
     <div class="row p-0 m-0 my-2">
         <div class="col-12 mx-auto ">
             <div class="col-12 m-0 p-0 m-auto">
-                <h3 class="p-0 m-0 text-uppercase">ข่าวอัพเดต</h3>
+                <h3 class="p-0 m-0 text-uppercase">Monthly News</h3>
             </div>
 
             <div class=" p-0 m-0" id="news_update">

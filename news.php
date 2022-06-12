@@ -80,7 +80,6 @@
 
         })
     }
-
 </script>
 
 <div class="d-none d-sm-block">
