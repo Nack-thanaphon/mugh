@@ -12,8 +12,8 @@
                     </div>
                     <div class="col-12 col-sm-12 mx-auto pb-3  text-start text-dark">
                         <img src="./img/logo2.jpg" width="100%" height="auto" alt="">
-                        <p class="py-5">
-                            In recognition of contribution in healthcare industry as well as its dedication to improving life and bringing better health to the society, Mahidol University Global Health (Mugh) was initiated in October 2012 with the aim to bridge the gap between interdisciplinary faculties and network with other universities and organizations at the national, regional and global levels in the context of global health
+                        <p class="py-5 text-justify">
+                            &nbsp;&nbsp; In recognition of contribution in healthcare industry as well as its dedication to improving life and bringing better health to the society,Mahidol University Global Health Coordination Unit (MUGH) was initiated in October 2012 with the aim to bridge the gap between interdisciplinary faculties and network with other universities and organizations at the national, regional and global levels in the context of global health.
                         </p>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                 </p>
                 <a href="./about.php" class="text-dark"><b>Our goal</b></a>
                 </p>
-                <a href="./all_newsletter.php" class="text-dark"><b>Newsletter</b></a>
+                <a href="./newsletter.php" class="text-dark"><b>Newsletter</b></a>
                 </p>
             </div>
             <!-- Grid column -->

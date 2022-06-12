@@ -1,7 +1,7 @@
 <?php include './include/header.php'; ?>
 <?php include './include/navbar.php'; ?>
 
-<div class="container">
+<div class="container-fluid">
     <div class="row m-0 p-0">
         <div class="col-12 col-md-12 col-sm-12 card p-3  m-1  text-sm-center" id="download">
 
@@ -16,7 +16,7 @@
         $.ajax({
             type: "GET",
             dataType: "json",
-            url: "https://www.info-Mugh.com/api/single_download.php",
+            url: "https://www.info-mugh.com/api/single_download.php",
             data: {
                 id: id,
             },
@@ -31,7 +31,7 @@
                         <hr>
                         <div class="row m-0 p-0">
                             <div class="col-8 mx-auto">
-                            <a href="https://info-Mugh.com/bos/uploads/docs/${data[i].file}" class="btn btn-success w-100" target="blank"><i class="fas fa-arrow-circle-down"></i> Download </a>
+                            <a href="https://info-mugh.com/bos/uploads/docs/${data[i].file}" class="btn btn-success w-100" target="blank"><i class="fas fa-arrow-circle-down"></i> Download </a>
                             </div>
                         </div>`
                     $('#download').append($fd);

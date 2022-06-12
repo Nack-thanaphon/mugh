@@ -1,9 +1,14 @@
 <?php include './include/header.php'; ?>
 <?php include './include/navbar.php'; ?>
 
-<div class="container">
-
-    <div class="row m-0 p-0">
+<div class="container-fluid">
+    <div class="row ">
+        <div class="col-12 bg-primary py-5 text-center text-white">
+            <div class="py-2">
+                <h3>Gallery</h3>
+            </div>
+            <!-- <small>Lorem, ipsum dolor./Lorem, ipsum dolor./Lorem, ipsum dolor./Lorem, ipsum dolor./</small> -->
+        </div>
         <div class="col-12 col-md-12 col-sm-12 card p-3 p-sm-5 text-sm-center">
 
             <div class="py-3">
@@ -31,24 +36,22 @@
         $.ajax({
             type: "GET",
             dataType: "json",
-            url: "https://www.info-Mugh.com/api/single_image.php",
+            url: "https://www.info-mugh.com/api/single_image.php",
             data: {
                 id: id,
             },
             success: function(resp) {
                 data = resp.result;
                 if (data != '') {
-
                     var html = '';
                     for (var i = 0; i < data.length; i++) {
                         html +=
                             `<div class="col-sm-3 col-md-4 mb-3">
-                        <a class="fancybox" data-fancybox="gallery" href="https://info-Mugh.com/bos/uploads/${data[i].image}">
-                        <img width="100%" height="100%"  src="https://info-Mugh.com/bos/uploads/${data[i].image}" alt=""/>
+                        <a class="fancybox" data-fancybox="gallery" href="https://info-mugh.com/bos/uploads/${data[i].image}">
+                        <img width="100%" height="100%"  src="https://info-mugh.com/bos/uploads/${data[i].image}" alt=""/>
                         </a>
                     </div>
                     `
-
                         $('#title').html(data[i].name);
                         $('#date').html(data[i].date);
                     }

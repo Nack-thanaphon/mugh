@@ -61,7 +61,7 @@
                     </div>
                 </nav>
                 <h2 class="text-primary font-weight-bold">ข่าวสารประจำเดือน</h2>
-                <small class="text-secondary">Newsupdate : Asean University Health Promotion Network</small>
+                <small class="text-secondary">Newsupdate : Mahidol University Global Health</small>
                 <hr>
                 <article id="blog-post" class="blog-post">
                     <h3 id="news_title"></h3>

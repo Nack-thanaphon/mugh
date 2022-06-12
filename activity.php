@@ -4,10 +4,16 @@
 
 
 <div class="row m-0 p-0">
+    <div class="col-12 bg-primary py-5 text-center text-white">
+        <div class="py-2 align-center">
+            <h1 class="font-weight-bold">Activity</h1>
+            <small >Activity : Mahidol University Global Health</small>
+           
+        </div>
+        <!-- <small>Lorem, ipsum dolor./Lorem, ipsum dolor./Lorem, ipsum dolor./Lorem, ipsum dolor./</small> -->
+    </div>
     <div class="col-12 col-md-12 col-sm-12 card p-3 p-sm-5 text-sm-center">
-        <h1 class="text-primary font-weight-bold">Activity</h1>
-        <small class="text-secondary">Activity : Asean University Health Promotion Network</small>
-        <hr>
+
         <div class="row my-4 m-0 p-0">
             <div class="col-12 m-0 p-0">
                 <table id="g_table" class="p-0 m-0 table table-hover w-100" width="100%">
@@ -26,7 +32,7 @@
         $.ajax({
             type: "GET",
             dataType: "json",
-            url: "https://www.info-Mugh.com/api/get_activity.php",
+            url: "https://www.info-mugh.com/api/get_activity.php",
             data: {},
         }).done(function(data) {
             console.log(data)
@@ -54,28 +60,28 @@
             $('#g_table').DataTable({
                 data: tableData,
                 columns: [{
-                        title: "ลำดับที่",
+                        title: "NO.",
                         className: "align-middle",
                         width: "10%",
                     },
                     {
-                        title: "หัวข้อกิจกรรม",
+                        title: "TITLE",
                         className: "align-middle",
 
                     },
 
                     {
-                        title: "วันเดือนปี",
+                        title: "DATE",
                         className: "align-middle",
 
                     },
                     {
-                        title: "เวลา",
+                        title: "TIME",
                         className: "align-middle",
 
                     },
                     {
-                        title: "เรียกดู",
+                        title: "VIEW",
                         className: "align-middle",
 
                     },
@@ -97,18 +103,7 @@
                         })
                     }
                 },
-                language: {
-                    "lengthMenu": "แสดงข้อมูล _MENU_ แถว",
-                    "zeroRecords": "ไม่พบข้อมูลที่ต้องการ",
-                    "info": "แสดงหน้า _PAGE_ จาก _PAGES_",
-                    "infoEmpty": "ไม่พบข้อมูลที่ต้องการ",
-                    "infoFiltered": "(filtered from _MAX_ total records)",
-                    "search": 'ค้นหา',
-                    "paginate": {
-                        "previous": "ก่อนหน้านี้",
-                        "next": "หน้าต่อไป"
-                    }
-                }
+               
             })
         }
     })

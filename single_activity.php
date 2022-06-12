@@ -1,7 +1,7 @@
 <?php include './include/header.php'; ?>
 <?php include './include/navbar.php'; ?>
 
-<div class="container">
+<div class="container-fluid">
 
     <div class="row m-0 p-0">
         <div class="col-12 col-md-12 col-sm-12 card p-3 p-sm-5 text-sm-center">
@@ -34,7 +34,7 @@
         $.ajax({
             type: "GET",
             dataType: "json",
-            url: "https://www.info-Mugh.com/api/single_activity.php",
+            url: "https://www.info-mugh.com/api/single_activity.php",
             data: {
                 id: id,
             },

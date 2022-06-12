@@ -7,7 +7,7 @@
                     <!-- Heading -->
 
                     <h1>Mugh</h1>
-                    <h4 class="mb-4" style="font-size:1.2rem ;">Asean University Network - Health Promotion Network</h4>
+                    <h4 class="mb-4" style="font-size:1.2rem ;">Mahidol University Global Health</h4>
 
                     <!-- Subheading -->
                     <p class="mb-4" style="font-size:0.8rem ;">

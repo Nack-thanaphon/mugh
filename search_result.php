@@ -91,7 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 ?>
-<div class="container">
+<div class="container-fluid">
     <div class="row p-0 my-2 m-0 d-flex justify-content-between">
         <div class="col-12 col-md-12 col-sm-12 card py-4 mb-2">
 
@@ -126,7 +126,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $.ajax({
             type: "GET",
             dataType: "json",
-            url: "https://www.info-Mugh.com/api/singleactivity.php",
+            url: "https://www.info-mugh.com/api/singleactivity.php",
             data: {
                 id: id,
             },

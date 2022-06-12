@@ -3,8 +3,8 @@
 
 <div class="row m-0 p-0">
     <div class="col-12 col-md-12 col-sm-12 card p-3 p-sm-5 text-sm-center">
-        <h1 class="text-primary font-weight-bold">curriculum</h1>
-        <small class="text-secondary">curriculum : Asean University Health Promotion Network</small>
+        <h1 class="text-primary font-weight-bold">Curriculum</h1>
+        <small class="text-secondary">Curriculum : Mahidol University Global Health</small>
         <hr>
         <div class="row my-4 m-0 p-0">
             <div class="col-12 m-0 p-0">
@@ -23,7 +23,7 @@
         $.ajax({
             type: "GET",
             dataType: "json",
-            url: "https://www.info-Mugh.com/api/get_curriculum.php",
+            url: "https://www.info-mugh.com/api/get_Curriculum.php",
             data: {},
         }).done(function(data) {
             let tableData = []
@@ -34,7 +34,7 @@
                     `${data[i].name}`,
                     `${data[i].group}`,
                     `
-                <a href="https://info-Mugh.com/bos/uploads/docs/${data[i].file}" target="blank" class=" btn btn-success "><small class="m-0 p-0 font-weight-bold ">
+                <a href="https://info-mugh.com/bos/uploads/docs/${data[i].file}" target="blank" class=" btn btn-success "><small class="m-0 p-0 font-weight-bold ">
                 <i class="fas fa-arrow-circle-down"></i> Download </small></a>
                 </div>
               `,
@@ -51,7 +51,7 @@
             $('#g_table').DataTable({
                 data: tableData,
                 columns: [{
-                        title: "curriculum Name",
+                        title: "Curriculum Name",
                         className: "align-middle",
                         width: "60%",
 

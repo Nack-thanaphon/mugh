@@ -3,15 +3,19 @@
     src: url(../font/RSU_Regular.ttf);
   }
 
+  @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@500&display=swap');
+
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-weight: 200;
 }
 
 
 /* design root */
+
 
 :root {
     --main: #0077B6;
@@ -20,10 +24,9 @@
     --forth: #fefefe;
     --font1: 1.5rem;
 }
-
 body {
     background-color: #f0f0f0;
-    font-family:RSU_light ;
+    font-family: 'Mitr', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -276,7 +279,6 @@ body>#overlay {
 /* ================================== *\
       Mediaqueries
   \* ================================== */
-
 
 /* Google translate */
 
@@ -710,7 +712,7 @@ overflow: hidden;
 }
 
 footer {
-    background-color: var(--secound);
+    background-color:#fefefe;
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -721,7 +723,7 @@ footer a {
 footer p {
   
     font-weight: 400;
-   
+    font-weight: bolder;
 }
 
 footer b {
@@ -735,8 +737,8 @@ footer h6 {
 }
 
 #footer-social {
-    /* color: white !important; */
-    background-color: var(--third);
+    color: white !important;
+    background-color: var(--secound);
 }
 
 .tabs-left {
@@ -993,7 +995,6 @@ footer h6 {
     list-style: none;
     margin: 20px auto;
 }
-
 .main_card{
    
     background-color: rgba(2, 2, 2);
@@ -1003,129 +1004,14 @@ footer h6 {
     background-repeat: no-repeat;
 }
 
-.member_card{
-    background-color: rgba(2, 2, 2);
-    background-image: url('https://img.freepik.com/free-vector/solidarity-concept-illustration_114360-6286.jpg?t=st=1651978307~exp=1651978907~hmac=12927bd0bca4b83f0db5e703e182f98cae74206684afe25d9b038c50734ec732&w=900');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
-.about_card{
-    background-color: rgba(2, 2, 2);
-    background-image: url('https://img.freepik.com/free-vector/personal-goals-concept-illustration_114360-5616.jpg?t=st=1651978212~exp=1651978812~hmac=5de9ead876e8d0a6e8b945b8c4f262755cf906d850e61ffb5aaa412aac823f63&w=740');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
 .main_card_bg{
+height: 550px;
     background-color: rgba(2, 2, 2,0.5);
 }
 
 
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
-.onoffswitch3
-{
-    background-color:var(--main);
-    color: white;
-    position: relative; 
-    -webkit-user-select:none; 
-    -moz-user-select:none; 
-    -ms-user-select: none;
-}
-
-.onoffswitch3-checkbox {
-    display: none;
-}
-
-.onoffswitch3-label {
-    display: block; 
-    overflow: hidden; 
-    cursor: pointer;
-    
-    border: 0px solid #999999; 
-    border-radius: 0px;
-}
-
-.onoffswitch3-inner {
-    display: block;
-     width: 200%; 
-    margin-left: -100%;
-    -moz-transition: margin 0.3s ease-in 0s; 
-    -webkit-transition: margin 0.3s ease-in 0s;
-    -o-transition: margin 0.3s ease-in 0s; 
-    transition: margin 0.3s ease-in 0s;
-}
-
-.onoffswitch3-inner > span {
-    display: block; 
-    float: left; 
-    position: relative; 
-    width: 50%; 
-    height: 30px; 
-    padding: 0; 
-    line-height: 30px;
-    font-size: 14px; 
-    color: white; 
-
-    
-    -moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box; 
-    box-sizing: border-box;
-}
-
-.onoffswitch3-inner .onoffswitch3-active {
-    padding-left: 10px;
-
-}
-
-.onoffswitch3-inner .onoffswitch3-inactive {
-    width: 100px;
-    margin: 0 auto;
-    padding-left: 16px;
-    background-color: #00C7A3; color: #FFFFFF;
-
-}
-
-.onoffswitch3-switch {
-    display: block; width: 50%; 
-    margin: 0px; 
-    text-align: center;  
-    border: 0px solid #999999;
-    border-radius: 0px; 
-    position: absolute; 
-    top: 0; 
-    bottom: 0;
-}
-.onoffswitch3-active .onoffswitch3-switch {
-    background: #27A1CA; 
-    left: 0;
-    width: 160px;
-}
-.onoffswitch3-inactive{
-    background: #A1A1A1; 
-    right: 0;
-    width: 20px;
-}
-.onoffswitch3-checkbox:checked + .onoffswitch3-label .onoffswitch3-inner {
-    margin-left: 0;
-}
-
-.glyphicon-remove{
-    padding: 3px 0px 0px 0px;
-    color: #fff;
-    background-color: #000;
-    height: 25px;
-    width: 25px;
-    border-radius: 15px;
-    border: 2px solid #fff;
-}
-
-.scroll-text a {
-    color: #fefefefe;
-}
 .dataTables_length{
    display: flex;
    justify-content: flex-start;
@@ -1147,4 +1033,9 @@ footer h6 {
      #g_table_info { 
          display: none !important;
      }
+ }
+ #text-slide{  
+   
+    background-color:var(--main);
+
  }

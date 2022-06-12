@@ -2,10 +2,15 @@
 <?php include './include/navbar.php'; ?>
 
 <div class="row m-0 p-0">
+    <div class="col-12 bg-primary py-5 text-center text-white">
+        <div class="py-2">
+            <h1 class=" font-weight-bold">Newsletter</h1>
+            <small>Newsletter : Mahidol University Global Health</small>
+            <hr>
+        </div>
+        <!-- <small>Lorem, ipsum dolor./Lorem, ipsum dolor./Lorem, ipsum dolor./Lorem, ipsum dolor./</small> -->
+    </div>
     <div class="col-12 col-md-12 col-sm-12 card p-3 p-sm-5 text-sm-center">
-        <h1 class="text-primary font-weight-bold">Newsletter</h1>
-        <small class="text-secondary">Newsletter : Asean University Health Promotion Network</small>
-        <hr>
         <div class="row my-4 m-0 p-0">
             <div class="col-12 m-0 p-0">
                 <table id="g_table" class="p-0 m-0 table table-hover w-100" width="100%">
@@ -23,19 +28,19 @@
         $.ajax({
             type: "GET",
             dataType: "json",
-            url: "https://www.info-Mugh.com/api/get_newsletter.php",
+            url: "https://www.info-mugh.com/api/get_newsletter.php",
             data: {},
         }).done(function(data) {
             let tableData = []
-            console.log(data)
+            let n = 1
             data = data.result;
             for (var i = 0; i < data.length; i++) {
                 tableData.push([
-
+                    `${n++}`,
                     `${data[i].name}`,
-                    `${data[i].date}`,
+                    `${data[i].month}`,
                     `
-                <a href="https://Mugh.or.th/single_newsletter.php?id=${data[i].id}" target="blank" class=" btn btn-success "><small class="m-0 p-0 font-weight-bold ">
+                <a href="https://www.info-mugh.com/bos/uploads/newsletter/${data[i].file}" target="blank" class=" btn btn-success "><small class="m-0 p-0 font-weight-bold ">
                 <i class="fas fa-arrow-circle-down"></i> Download </small></a>
                 </div>
               `,
@@ -45,18 +50,22 @@
 
             initDataTables(tableData);
         }).fail(function() {
-
+            $('#g_table').html('ไม่พบข้อมูล')
         })
 
         function initDataTables(tableData) { // สร้าง datatable
             $('#g_table').DataTable({
                 data: tableData,
+                order: [
+                    ['0', 'desc']
+                ],
                 columns: [{
+                        title: "ลำดับที่",
+                        className: "align-middle",
+                    },
+                    {
                         title: "Newsletter Name",
                         className: "align-middle",
-                        width: "60%",
-
-
                     },
 
                     {

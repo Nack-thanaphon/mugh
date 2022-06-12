@@ -1,12 +1,16 @@
 <?php include './include/header.php'; ?>
 <?php include './include/navbar.php'; ?>
 
-<div class="row p-0 m-1 d-flex justify-content-between">
-    <div class="col-12 col-md-8 card p-3  mb-3">
-        <h1 class="text-primary font-weight-bold">ข่าวสารประจำเดือน</h1>
-        <small class="text-secondary">Newsupdate : Asean University Health Promotion Network</small>
-        <hr>
-
+<div class="row p-0 m-0  d-flex justify-content-between">
+    <div class="col-12 bg-primary py-5 text-center text-white">
+        <div class="py-2">
+            <h1 class="font-weight-bold">ข่าวสารประจำเดือน</h1>
+            <small>Newsupdate : Mahidol University Global Health</small>
+            <hr>
+        </div>
+        <!-- <small>Lorem, ipsum dolor./Lorem, ipsum dolor./Lorem, ipsum dolor./Lorem, ipsum dolor./</small> -->
+    </div>
+    <div class="col-12 col-md-8 card p-  mb-3">
         <div class="row my-4 m-0 p-0" id="news_list">
 
         </div>
@@ -31,7 +35,7 @@
         $.ajax({
             type: "POST",
             dataType: "json",
-            url: "https://www.info-Mugh.com/api/process_data.php",
+            url: "https://www.info-mugh.com/api/process_data.php",
             data: form_data,
             contentType: false,
             cache: false,
@@ -47,10 +51,10 @@
                 if (data.length > 0) {
                     for (var i = 0; i < data.length; i++) {
                         news += `
-                    <div class=" col-12 col-sm-4 p-2 m-0 my-1 news-card-all">
+                    <div class=" col-12 col-sm-4 p-2 m-0 my-2 news-card-all">
                 <a href="./single_news.php?id=${data[i].id}" data-id="${data[i].id}" id="singlenews"
                 class="btn col-12 p-0 m-0 "> 
-                  <img class="card-img-top" src="https://info-Mugh.com/bos/${data[i].image}"alt="${data[i].name}">
+                  <img class="card-img-top" src="https://info-mugh.com/bos/${data[i].image}"alt="${data[i].name}">
                 </a>
                 <p class="badge badge-pill badge-primary m-0 ">${data[i].date}</p>
                 <strong class="py-1 name">${data[i].name}</strong>
@@ -77,36 +81,6 @@
         })
     }
 
-
-    $(document).ready(function() {
-
-        $.ajax({
-            type: "GET",
-            dataType: "json",
-            url: "https://www.info-Mugh.com/api/news_by_month.php",
-            data: {},
-            success: function(data) {
-                data = data.result;
-                for (var i = 0; i < data.length; i++) {
-                    news = `
-                        <li class="m-2">
-                        <a href="news_result.php?q=${data[i].date}" >
-                        <b class="p-0 m-0" id="news_title">${data[i].date}</b>
-                        </a><br>
-                        <small class="p-0 m-0" id="news_date"></small>
-                        </li>`
-                    $('#month_list').append(news);
-                    $('#mounth-header').html('ข่าวประจำเดือน');
-
-                };
-            },
-
-            error: function(err) {
-                console.log("bad", err)
-
-            }
-        })
-    })
 </script>
 
 <div class="d-none d-sm-block">

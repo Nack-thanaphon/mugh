@@ -2,25 +2,23 @@
 <?php include './include/navbar.php'; ?>
 
 <body>
-    <div class="container">
-        <div class="row py-5">
-
-
+    <div class="container-fluid">
+        <div class="row pb-5">
+            <div class="col-12 bg-primary py-5 text-center text-white">
+                <div class="py-2 align-center">
+                    <h1 class="text-uppercase">Our Member</h1>
+                    <p>ASEAN University Network – Health Promotion Network (AUN–HPN)</p>
+                </div>
+                <!-- <small>Lorem, ipsum dolor./Lorem, ipsum dolor./Lorem, ipsum dolor./Lorem, ipsum dolor./</small> -->
+            </div>
             <div class="col-12 p-2 my-3 m-0">
                 <div class="col-12 pb-3 p-0 m-0 mx-auto ">
                     <div class="col-md-12 mx-auto">
                         <div class="row  p-0 m-0">
+
                             <div class="col-12 p-0 m-0">
-                                <h1 class="text-uppercase">Our Member</h1>
-                                <p>Mahidol University Global Health (MUGH) (AUN–HPN)</p>
-                                <!-- <nav aria-label="">
-                                    <ol class="breadcrumb bg-transparent p-0 my-2">
-                                        <li class="breadcrumb-item"><a href="./">หน้าหลัก</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Partners</a></li>
-                                    </ol>
-                                </nav> -->
                                 <ul class="nav nav-tabs" role="tablist ">
-                                    <li class="nav-item col-6 p-0 m-0 text-center ">
+                                    <li class="nav-item col-6 p-0 m-0 text-center " id="test">
                                         <a class="nav-link active py-3" data-toggle="tab" href="#tabs-1" role="tab">
                                             <h5 class="p-0 m-0 text-dark">Full Members</h5>
                                         </a>
@@ -63,6 +61,6 @@
 
 
     <?php
-    include 'include/script.php';
+    include './include/script.php';
     include "./include/footer.php"; ?>
 </body>
