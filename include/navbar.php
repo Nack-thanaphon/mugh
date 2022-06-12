@@ -25,7 +25,7 @@
                     <a class="nav-link text-white" href="gallery.php">Gallery</a>
                 </li>
                 <li class="nav-item text-white">
-                    <a class="nav-link text-white" href="Curriculum.php">Curriculum</a>
+                    <a class="nav-link text-white" href="curriculum.php">Curriculum</a>
                 </li>
                 <li class="nav-item text-white">
                     <a class="nav-link text-white" href="newsletter.php">Newsletter</a>

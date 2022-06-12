@@ -1,8 +1,6 @@
 <?php include './include/header.php'; ?>
 <?php include './include/navbar.php'; ?>
 
-<div class="container-fluid">
-
     <div class="row m-0 p-0">
         <div class="col-12 bg-primary py-5 text-center text-white">
             <div class="py-2">
@@ -27,9 +25,6 @@
 
 
     </div>
-
-
-</div>
 
 <?php include 'include/script.php' ?>
 <script>

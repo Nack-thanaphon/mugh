@@ -4,7 +4,7 @@
 <div class="row p-0 m-0  d-flex justify-content-between">
     <div class="col-12 bg-primary py-5 text-center text-white">
         <div class="py-2">
-            <h1 class="font-weight-bold">ข่าวสารประจำเดือน</h1>
+            <h1 class="font-weight-bold">Newsupdate</h1>
             <small>Newsupdate : Mahidol University Global Health</small>
             <hr>
         </div>
