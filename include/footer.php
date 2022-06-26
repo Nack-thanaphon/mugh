@@ -7,12 +7,10 @@
             <!-- Grid column -->
             <div class="col-12 col-sm-6 mx-auto pb-3 ">
                 <div class="row ">
-                    <div class="col-12 col-sm-12 mx-auto pb-3 text-start">
-                        <h6 class="text-uppercase fw-bold mb-4">Supported by</h6>
-                    </div>
-                    <div class="col-12 col-sm-12 mx-auto pb-3  text-start text-dark">
+
+                    <div class="col-12 col-sm-12 mx-auto pb-3  text-start ">
                         <img src="./img/logo2.jpg" width="100%" height="auto" alt="">
-                        <p class="py-5 text-justify">
+                        <p class="py-5 text-justify font-weight-bold">
                             &nbsp;&nbsp; In recognition of contribution in healthcare industry as well as its dedication to improving life and bringing better health to the society,Mahidol University Global Health Coordination Unit (MUGH) was initiated in October 2012 with the aim to bridge the gap between interdisciplinary faculties and network with other universities and organizations at the national, regional and global levels in the context of global health.
                         </p>
                     </div>
@@ -22,26 +20,28 @@
             <!-- Grid column -->
             <div class="col-12 col-sm-2 mx-auto pb-3  text-align-start ">
                 <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                    Shortcut Link
-                </h6>
-                <a href="./contact.php" class="text-dark"><b>Contact us</b></a>
-                </p>
-                <a href="./about.php" class="text-dark"><b>Who we are</b></a>
-                </p>
-                <a href="./about.php" class="text-dark"><b>Our goal</b></a>
-                </p>
-                <a href="./newsletter.php" class="text-dark"><b>Newsletter</b></a>
-                </p>
+                <h2 class="text-uppercase fw-bold mb-4">
+                    Service Links
+                </h2>
+                <a href="./contact.php" class="">
+                    <img src="./img/logo/Picture1.png" class="w-100 w-xs-20 pb-3" alt="">
+                </a>
+                <a href="./contact.php" class="">
+                    <img src="./img/logo/Picture2.png" class="w-100 w-20 pb-3" alt="">
+                </a>
+                <a href="./contact.php" class="">
+                    <img src="./img/logo/Picture3.png" class="w-100 w-20 pb-3 pr-5" alt="">
+                </a>
+
             </div>
             <!-- Grid column -->
 
             <!-- Grid column -->
             <div class="col-12 col-sm-3 mx-auto pb-3   text-align-start">
                 <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                    Contact
-                </h6>
+                <h2 class="text-uppercase fw-bold mb-4">
+                    Contact Us
+                </h2>
                 <p> ASEAN Institute for Health Development, 999 Salaya
                     Phuttamonthon, Nakon Pathom, 73170 THAILAND</p>
 

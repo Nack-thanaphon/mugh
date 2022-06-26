@@ -10,13 +10,11 @@
     padding: 0%;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 
 /* design root */
-
-
 :root {
     --main: #0077B6;
     --secound: #10AF8B;
@@ -24,17 +22,8 @@
     --forth: #fefefe;
     --font1: 1.5rem;
 }
-body {
-    background-color: #f0f0f0;
-    font-family: 'Mitr', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    top: 0px !important;
-    background-position: center;
-    background-size: auto;
-    background-repeat: repeat;
-}
+
+
 
 
 /* Navbar */
@@ -56,16 +45,7 @@ body {
     background-repeat: no-repeat;
 }
 
-#readmore {
-    width: 200px;
-    border-radius: 30px;
-    background-color: var(--third);
-    border: none;
-}
 
-#readmore:hover {
-    background-color: var(--secound);
-}
 
 .main-banner h1 {
     color: var(--main);
@@ -279,6 +259,7 @@ body>#overlay {
 /* ================================== *\
       Mediaqueries
   \* ================================== */
+
 
 /* Google translate */
 
@@ -712,7 +693,7 @@ overflow: hidden;
 }
 
 footer {
-    background-color:#fefefe;
+    background-color: #ddd;
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -995,6 +976,7 @@ footer h6 {
     list-style: none;
     margin: 20px auto;
 }
+
 .main_card{
    
     background-color: rgba(2, 2, 2);
@@ -1004,10 +986,22 @@ footer h6 {
     background-repeat: no-repeat;
 }
 
+.member_card{
+    background-color: rgba(2, 2, 2);
+    background-image: url('https://img.freepik.com/free-vector/solidarity-concept-illustration_114360-6286.jpg?t=st=1651978307~exp=1651978907~hmac=12927bd0bca4b83f0db5e703e182f98cae74206684afe25d9b038c50734ec732&w=900');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
-
+.about_card{
+    background-color: rgba(2, 2, 2);
+    background-image: url('https://img.freepik.com/free-vector/personal-goals-concept-illustration_114360-5616.jpg?t=st=1651978212~exp=1651978812~hmac=5de9ead876e8d0a6e8b945b8c4f262755cf906d850e61ffb5aaa412aac823f63&w=740');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .main_card_bg{
-height: 550px;
     background-color: rgba(2, 2, 2,0.5);
 }
 
@@ -1034,8 +1028,6 @@ height: 550px;
          display: none !important;
      }
  }
- #text-slide{  
-   
-    background-color:var(--main);
-
+ #text-slide{
+     background-color:var(--secound);
  }

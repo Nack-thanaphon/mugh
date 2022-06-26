@@ -1,10 +1,13 @@
 <?php include './include/header.php'; ?>
 <?php include './include/navbar.php'; ?>
 
+
+
 <body>
     <input type="hidden" id="web_static" name="c_ip" value="<?php echo $_SERVER['REMOTE_ADDR']; ?>">
     <div class="container-fluid m-0 p-0 mx-auto mb-3">
         <div class="row m-0 p-0 ">
+            <?php include './pages/modal.php'; ?>
             <div class="col-12 m-0 p-0">
                 <div class="row my-0  m-0 p-0 ">
                     <div class="col-12 col-sm-12 main_card">
@@ -94,12 +97,22 @@
             <div class="col-12  p-0   my-3 ">
                 <div class="row  h-100 m-0 text-center py-4 ">
                     <div class="col-12 col-sm-8 mx-auto  text-primary  ">
-                        <h2 class="font-weight-bold text-uppercase ">FIND</h2>
-                        <h4>Find Your Topic As you Want</h4>
-                        <small class="text-secondary">Conference Document Activity Newsupdate</small><br>
+                        <h2 class="font-weight-bold text-uppercase ">Find Your Topic
+                        </h2>
+                        <small class="text-secondary">Conference Document Activity News update
+                        </small><br>
 
                         <form id="search" method="POST" class="my-4" action="./search_result.php">
-                            <div class="input-group">
+                            <div class="input-group mb-3 ">
+                                <input type="text" class="form-control py-4" id="search_detail" name="search_detail" placeholder="Find this website...">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn input-group-text" type="submit" id="search_btn" value="submit" disabled>
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- <div class="input-group">
                                 <input type="text" id="search_detail" name="search_detail" class="form-control py-4 " placeholder="Find this website..">
                             </div>
                             <button class="btn btn-primary col-12 col-md-8 col-sm-8 mx-auto  p-2 my-3 w-100" type="submit" id="search_btn" value="submit" disabled>
@@ -107,7 +120,7 @@
                                 <h4 class="font-weight-bold p-0 m-0">
                                     find now
                                 </h4>
-                            </button>
+                            </button> -->
                         </form>
                     </div>
 
@@ -131,6 +144,9 @@
                 return true
             }
 
+        });
+        $('#myModal').modal({
+            show: true
         });
     </script>
     <script src="services/api/get_activity.js"></script>

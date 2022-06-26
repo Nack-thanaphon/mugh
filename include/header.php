@@ -19,8 +19,8 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script type="text/javascript" src="https://cookiecdn.com/cwc.js"></script>
-    <script id="cookieWow" type="text/javascript" src="https://cookiecdn.com/configs/DBZWVrMpYTSjE8vheuThhARR" data-cwcid="DBZWVrMpYTSjE8vheuThhARR"></script>
+    <!-- <script type="text/javascript" src="https://cookiecdn.com/cwc.js"></script>
+    <script id="cookieWow" type="text/javascript" src="https://cookiecdn.com/configs/DBZWVrMpYTSjE8vheuThhARR" data-cwcid="DBZWVrMpYTSjE8vheuThhARR"></script> -->
     <link rel="stylesheet" href="./assets/datatables-bs4/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="./assets/datatables-responsive/css/responsive.bootstrap4.min.css">
 
