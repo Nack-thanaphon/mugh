@@ -81,7 +81,7 @@
                     <hr class="py-2">
                     <div class="col-12 my-2 p-0">
                         <div id="news_image" alt=""></div>
-                        <div id="news_detail" class="my-4"></div>
+                        <div id="news_detail" class="my-4 text-justify"></div>
                     </div>
                 </article>
             </div>

@@ -28,7 +28,7 @@ function banner() {
                     $('.slideshow').slick('slickAdd', $bn);
                 };
             } else {
-                $('#banner').html('-ไม่มีข่าวสาร-');
+            
             }
         },
         error: function (err) {

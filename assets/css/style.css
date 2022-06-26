@@ -1,9 +1,8 @@
 @font-face {
-    font-family:RSU_light ;
-    src: url(../font/RSU_Regular.ttf);
+    font-family:THSarabun_Bold ;
+    src: url(../font/THSarabun_Bold.ttf);
   }
 
-  @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@500&display=swap');
 
 * {
     margin: 0%;
@@ -11,6 +10,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-weight: 400;
+    font-family: THSarabun_Bold;
 }
 
 
@@ -25,24 +25,10 @@
 
 
 
-
 /* Navbar */
 
 #navbar-bg {
     background-color: var(--third) !important;
-}
-
-.banner-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 450px;
-    width: auto;
-    background-color: #666666;
-    background-image: url('https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 
@@ -52,11 +38,7 @@
     font-size: 3.5rem;
 }
 
-@media (max-width: 991px) {
-    .banner-area {
-        height: auto;
-    }
-}
+
 
 
 /* Topbar */
@@ -94,96 +76,6 @@
 
 /* Website Logo  adn detail*/
 
-body>#overlay {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: auto;
-    right: calc(282.6666666667px - 10px);
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    overflow-x: hidden;
-    z-index: 1029;
-}
-
-@media (min-width: 992px) {
-    body>#overlay {
-        right: calc(424px - 10px);
-    }
-}
-
-@keyframes topbar-x {
-    0% {
-        top: 0px;
-        transform: rotate(0deg);
-    }
-    45% {
-        top: 6px;
-        transform: rotate(145deg);
-    }
-    75% {
-        transform: rotate(130deg);
-    }
-    100% {
-        transform: rotate(135deg);
-    }
-}
-
-@keyframes topbar-back {
-    0% {
-        top: 6px;
-        transform: rotate(135deg);
-    }
-    45% {
-        transform: rotate(-10deg);
-    }
-    75% {
-        transform: rotate(5deg);
-    }
-    100% {
-        top: 0px;
-        transform: rotate(0);
-    }
-}
-
-@keyframes bottombar-x {
-    0% {
-        bottom: 0px;
-        transform: rotate(0deg);
-    }
-    45% {
-        bottom: 6px;
-        transform: rotate(-145deg);
-    }
-    75% {
-        transform: rotate(-130deg);
-    }
-    100% {
-        transform: rotate(-135deg);
-    }
-}
-
-@keyframes bottombar-back {
-    0% {
-        bottom: 6px;
-        transform: rotate(-135deg);
-    }
-    45% {
-        transform: rotate(10deg);
-    }
-    75% {
-        transform: rotate(-5deg);
-    }
-    100% {
-        bottom: 0px;
-        transform: rotate(0);
-    }
-}
-
-.module__white-bg {
-    background-color: #fff;
-}
 
 
 /* Google translate */
@@ -261,94 +153,6 @@ body>#overlay {
   \* ================================== */
 
 
-/* Google translate */
-
-#heroBanner .text-container-outer {
-    height: 100% !important;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-#heroBanner .text-container {
-    max-width: 300px;
-    height: 100%;
-}
-
-#heroBanner .text-container-inner {
-    z-index: 5;
-}
-
-#heroBanner .title {
-    font-size: 52px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    line-height: 54px;
-    color: var(--white);
-    margin-bottom: 20px;
-}
-
-#heroBanner .paragraph {
-    margin: 25px 0;
-}
-
-#heroBanner .bg-color {
-    background: #000;
-    opacity: 0.64;
-    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 5;
-}
-
-#heroBanner .container-fluid {
-    min-height: 600px;
-    overflow: hidden;
-    position: relative;
-    color: #fff;
-    padding: 30px 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#heroBanner .container-fluid a,
-#heroBanner .container-fluid p {
-    z-index: 10;
-    color: #fff;
-    font-size: 15px;
-    line-height: 30px;
-    font-weight: 300;
-}
-
-#heroBanner .container-fluid h1 {
-    font-size: 5.5rem;
-}
-
-#heroBanner .container-fluid img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-#heroBanner .slider {
-    opacity: 1;
-}
-
-#heroBanner .banner {
-    opacity: 0;
-}
-
-#heroBanner .scale-animation {
-    animation-name: animation;
-    animation-duration: 6s;
-    animation-fill-mode: forwards;
-}
 
 @keyframes animation {
     from {
@@ -509,151 +313,6 @@ overflow: hidden;
 }
 
 
-/* Login */
-
-.brand-wrapper h1 {
-    padding-top: 7px;
-    padding-bottom: 8px;
-    color: var(--secound);
-    font-weight: bold;
-}
-
-.brand-wrapper .logo {
-    height: 25px;
-}
-
-.login-section-wrapper {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    padding: 68px 100px;
-    background-color: #fff;
-}
-
-@media (max-width: 991px) {
-    .login-section-wrapper {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-}
-
-@media (max-width: 575px) {
-    .login-section-wrapper {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        min-height: 100vh;
-    }
-}
-
-.login-wrapper {
-    width: 300px;
-    max-width: 100%;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-
-@media (max-width: 575px) {
-    .login-wrapper {
-        width: 100%;
-    }
-}
-
-.login-wrapper label {
-    font-size: 14px;
-    font-weight: bold;
-    color: #b0adad;
-}
-
-.login-wrapper .form-control {
-    border: none;
-    border-bottom: 1px solid #e7e7e7;
-    border-radius: 0;
-    padding: 9px 5px;
-    min-height: 40px;
-    font-size: 18px;
-    font-weight: normal;
-}
-
-.login-wrapper .form-control::-webkit-input-placeholder {
-    color: #b0adad;
-}
-
-.login-wrapper .form-control::-moz-placeholder {
-    color: #b0adad;
-}
-
-.login-wrapper .form-control:-ms-input-placeholder {
-    color: #b0adad;
-}
-
-.login-wrapper .form-control::-ms-input-placeholder {
-    color: #b0adad;
-}
-
-.login-wrapper .form-control::placeholder {
-    color: #b0adad;
-}
-
-.login-wrapper .login-btn {
-    padding: 13px 20px;
-    background-color: var(--secound);
-    border-radius: 0;
-    font-size: 20px;
-    font-weight: bold;
-    color: #fff;
-    margin-bottom: 14px;
-}
-
-.login-wrapper .login-btn:hover {
-    border: 1px solid var(--secound);
-    background-color: #fff;
-    color: var(--secound);
-}
-
-.login-wrapper a.forgot-password-link {
-    color: #080808;
-    font-size: 14px;
-    text-decoration: underline;
-    display: inline-block;
-    margin-bottom: 54px;
-}
-
-@media (max-width: 575px) {
-    .login-wrapper a.forgot-password-link {
-        margin-bottom: 16px;
-    }
-}
-
-.login-wrapper-footer-text {
-    font-size: 16px;
-    color: #000;
-    margin-bottom: 0;
-}
-
-.login-title {
-    font-size: 30px;
-    color: #000;
-    font-weight: bold;
-    margin-bottom: 25px;
-}
-
-.login-img {
-    width: 100%;
-    height: 100vh;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: left;
-    object-position: center;
-}
-
-.form-group small {
-    display: none;
-}
-
-
-/* Login */
 
 #button {
     display: inline-block;
@@ -693,18 +352,20 @@ overflow: hidden;
 }
 
 footer {
-    background-color: #ddd;
-    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
+background-color: #666666;
+background-image: url('../../img/footer.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
 }
 
-footer a {
+footer h5 {
     color: #fefefe;
 }
 
 footer p {
-  
-    font-weight: 400;
-    font-weight: bolder;
+  font-size: 18px;
+    font-weight: 300 !important;
 }
 
 footer b {
@@ -712,10 +373,6 @@ footer b {
     padding: 0%;
 }
 
-footer h6 {
-    color: var(--third) !important;
-    font-weight: 600;
-}
 
 #footer-social {
     color: white !important;
@@ -886,13 +543,24 @@ footer h6 {
     width: 100%;
 }
 
-#myModal {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
+.modal.modal-fullscreen .modal-dialog {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    max-width: none; 
+  }
+  
+  .modal.modal-fullscreen .modal-content {
+    height: auto;
+    height: 100vh;
+    border-radius: 0;
+    border: none; 
+  }
+  
+  .modal.modal-fullscreen .modal-body {
+    overflow-y: auto; 
+  }
 .list-inline-item {
     font-size: 0.8rem;
 }
@@ -978,13 +646,22 @@ footer h6 {
 }
 
 .main_card{
-   
+   height: 580px;
     background-color: rgba(2, 2, 2);
-    background-image: url('https://t3.ftcdn.net/jpg/03/02/38/66/360_F_302386659_pDdxdrMWAmRSRpMnnOFACei0YLV5rttW.jpg');
+    background-image: url('../../img/Mahidol_No.1.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.main_card_mo{
+   
+     background-color: rgba(2, 2, 2);
+     background-image: url('https://mahidol.ac.th/temp/2018/09/009-2-1.jpg');
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
 
 .member_card{
     background-color: rgba(2, 2, 2);
@@ -1031,3 +708,5 @@ footer h6 {
  #text-slide{
      background-color:var(--secound);
  }
+
+

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-offcanvas">
+<nav class="navbar bg-secondary navbar-expand-xl navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand d-flex justify-content-between " href="./">
             <!-- <img class="d-none d-sm-block" src="./img/logo/logo2.png" alt=""> -->
@@ -8,63 +8,63 @@
                 <p class="p-0 m-0 d-none d-sm-block" style="font-size: 1rem;">Mahidol University Global Health</p>
             </div>
         </a>
-        <ul class="navbar-nav navbar-top">
-            <li class="nav-item active">
+        <ul class="navbar-nav navbar-top ">
+            <li class="nav-item  d-sm-flex flex-sm-row d-none">
                 <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item d-sm-flex flex-sm-row d-none">
                 <a class="nav-link" href="#">Education</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Research</a>
+            <li class="nav-item d-sm-flex flex-sm-row d-none">
+                <a class="nav-link " href="#">Research</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">News</a>
+            <li class="nav-item d-sm-flex flex-sm-row d-none">
+                <a class="nav-link " href="#">News</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Events</a>
+            <li class="nav-item d-sm-flex flex-sm-row d-none">
+                <a class="nav-link " href="#">Events</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Newsletter</a>
+            <li class="nav-item d-sm-flex flex-sm-row d-none">
+                <a class="nav-link " href="#">Newsletter</a>
             </li>
-            <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" role="button" href="#!" id="dropdownExample" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownExample">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li> -->
+
+            <button class="btn btn d-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </ul>
-        <button class="navbar-toggler navbar-toggler-right navbar-icon" type="button" data-toggle="collapse" data-target="#navbar-mobile" aria-controls="navbar-mobile" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="icon-bar bar1"></span>
-            <span class="icon-bar bar2"></span>
-            <span class="icon-bar bar3"></span>
-        </button>
-        <div class="navbar-collapse collapse ml-auto" id="navbar-mobile">
-            <ul class="navbar-nav ml-auto  ">
-                <li class="nav-item ">
-                    <a href="#!" class="nav-link text-left">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#!" class="nav-link text-left">History</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#!" class="nav-link text-left">Staff</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#!" class="nav-link text-left">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#!" class="nav-link text-left">Link to</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#!" class="nav-link text-left">Login</a>
-                </li>
-            </ul>
+        <div class="offcanvas offcanvas-end bg-secondary" id="navbarOffcanvas" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ">
+
+                <ul class="navbar-nav ml-auto  d-flex flex-column">
+                    <li class="nav-item ">
+                        <a href="#!" class="nav-link text-left">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="nav-link text-left">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="nav-link text-left">Staff</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="nav-link text-left">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="nav-link text-left">Link to</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="nav-link text-left">Login</a>
+                    </li>
+                </ul>
+
+            </div>
         </div>
     </div>
 </nav>
+
+
 
 <div class="text-center" id="text-slide">
     <marquee class="mt-2" behavior='scroll' direction='left' scrollamount='6'>

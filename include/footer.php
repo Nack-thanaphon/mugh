@@ -10,7 +10,7 @@
 
                     <div class="col-12 col-sm-12 mx-auto pb-3  text-start ">
                         <img src="./img/logo2.jpg" width="100%" height="auto" alt="">
-                        <p class="py-5 text-justify font-weight-bold">
+                        <p class="py-5 text-justify  text-white">
                             &nbsp;&nbsp; In recognition of contribution in healthcare industry as well as its dedication to improving life and bringing better health to the society,Mahidol University Global Health Coordination Unit (MUGH) was initiated in October 2012 with the aim to bridge the gap between interdisciplinary faculties and network with other universities and organizations at the national, regional and global levels in the context of global health.
                         </p>
                     </div>
@@ -20,16 +20,16 @@
             <!-- Grid column -->
             <div class="col-12 col-sm-2 mx-auto pb-3  text-align-start ">
                 <!-- Links -->
-                <h2 class="text-uppercase fw-bold mb-4">
+                <h5 class="text-uppercase fw-bold mb-4">
                     Service Links
-                </h2>
-                <a href="./contact.php" class="">
+                </h5>
+                <a href="https://mahidol.ac.th/"  target="blank" class="">
                     <img src="./img/logo/Picture1.png" class="w-100 w-xs-20 pb-3" alt="">
                 </a>
-                <a href="./contact.php" class="">
+                <a href="https://aihd.mahidol.ac.th/main/AIHD_EN/"   target="blank" class="">
                     <img src="./img/logo/Picture2.png" class="w-100 w-20 pb-3" alt="">
                 </a>
-                <a href="./contact.php" class="">
+                <a href="https://aun-hpn.or.th/" target="blank"  class="">
                     <img src="./img/logo/Picture3.png" class="w-100 w-20 pb-3 pr-5" alt="">
                 </a>
 
@@ -37,11 +37,11 @@
             <!-- Grid column -->
 
             <!-- Grid column -->
-            <div class="col-12 col-sm-3 mx-auto pb-3   text-align-start">
+            <div class="col-12 col-sm-3 mx-auto pb-3   text-align-start text-white">
                 <!-- Links -->
-                <h2 class="text-uppercase fw-bold mb-4">
+                <h5 class="text-uppercase fw-bold mb-4">
                     Contact Us
-                </h2>
+                </h5>
                 <p> ASEAN Institute for Health Development, 999 Salaya
                     Phuttamonthon, Nakon Pathom, 73170 THAILAND</p>
 

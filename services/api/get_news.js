@@ -15,23 +15,21 @@ function newsrender() {
                 for (var i = 0; i < data.length; i++) {
                     $news = `
                     
-                    <div class="col-12  m-0 p-0 bg-white patt mb-2" id="singlenews" >
-                    <div class="row m-0 p-0">
-                        <div class="col-4 m-0 p-0" >
-                        <a href="./single_news.php?id=${data[i].id}" data-id="${data[i].id}" > 
-                        <img class="img_new" src="https://info-Mugh.com/bos/${data[i].image}"alt="${data[i].name}">
-                        </a>                        
-                        </div>
-                        <div class="col-8 m-0">
-                        <small class="badge badge-pill badge-primary m-0 ">${data[i].type}</small>
-                            <img width="30px" height="20px" src="https://www.dol.go.th/lampang/PublishingImages/Pages/default/new.gif"alt="${data[i].name}">
-                                <br>
-                                <small class="text-dark name">${data[i].name}</small>
-                    
-                                <small class="text-muted">${data[i].date}</small>
+                    <div class=" col-sm-4 col-12 swiper-slide ">
+                    <div class="m-2">
+                    <div class="card mx-auto" style="width: 18rem;">
+                    <a href="./single_news.php?id=${data[i].id}" data-id="${data[i].id}" > 
+                            <img src="https://info-Mugh.com/bos/${data[i].image}"alt="${data[i].name}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">${data[i].name}</p>
+                                <small>${data[i].date}</small>
+                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                
            `
                     $('#news').append($news);
                 };
