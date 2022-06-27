@@ -23,13 +23,13 @@
                 <h5 class="text-uppercase fw-bold mb-4">
                     Service Links
                 </h5>
-                <a href="https://mahidol.ac.th/"  target="blank" class="">
+                <a href="https://mahidol.ac.th/" target="blank" class="">
                     <img src="./img/logo/Picture1.png" class="w-100 w-xs-20 pb-3" alt="">
                 </a>
-                <a href="https://aihd.mahidol.ac.th/main/AIHD_EN/"   target="blank" class="">
+                <a href="https://aihd.mahidol.ac.th/main/AIHD_EN/" target="blank" class="">
                     <img src="./img/logo/Picture2.png" class="w-100 w-20 pb-3" alt="">
                 </a>
-                <a href="https://aun-hpn.or.th/" target="blank"  class="">
+                <a href="https://aun-hpn.or.th/" target="blank" class="">
                     <img src="./img/logo/Picture3.png" class="w-100 w-20 pb-3 pr-5" alt="">
                 </a>
 
@@ -42,8 +42,7 @@
                 <h5 class="text-uppercase fw-bold mb-4">
                     Contact Us
                 </h5>
-                <p> ASEAN Institute for Health Development, 999 Salaya
-                    Phuttamonthon, Nakon Pathom, 73170 THAILAND</p>
+                <p> ASEAN Institute for Health Development, 999 Salaya Phuttamonthon, Nakon Pathom, 73170 Thailand </p>
 
                 <p>
 

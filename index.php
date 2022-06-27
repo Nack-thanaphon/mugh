@@ -76,15 +76,15 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 py-5">
-            <div class="row m-0 p-0">
+        <div class="col-12 py-sm-5">
+            <div class="row m-0 p-0 card  border py-5">
                 <div class="col-12">
                     <h2>Newsupdate</h2>
                 </div>
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper" id="news">
-                        <!-- <div class=" col-sm-4 col-12 swiper-slide ">
-                            <div class="m-2 ">
+                <div class="swiper mySwiper ">
+                    <div class="swiper-wrapper ">
+                        <div class=" col-sm-3 col-12 swiper-slide   m-0 p-0 ">
+                            <div class="">
                                 <div class="card mx-auto" style="width: 18rem;">
                                     <img src="https://images.unsplash.com/photo-1656110899438-ea993f5e3f9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
                                     <div class="card-body">
@@ -92,21 +92,74 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
+                        <div class=" col-sm-3 col-12 swiper-slide   m-0 p-0 ">
+                            <div class="">
+                                <div class="card mx-auto" style="width: 18rem;">
+                                    <img src="https://images.unsplash.com/photo-1656110899438-ea993f5e3f9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-sm-3 col-12 swiper-slide   m-0 p-0 ">
+                            <div class="">
+                                <div class="card mx-auto" style="width: 18rem;">
+                                    <img src="https://images.unsplash.com/photo-1656110899438-ea993f5e3f9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-sm-3 col-12 swiper-slide   m-0 p-0 ">
+                            <div class="">
+                                <div class="card mx-auto" style="width: 18rem;">
+                                    <img src="https://images.unsplash.com/photo-1656110899438-ea993f5e3f9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-sm-3 col-12 swiper-slide  m-0 p-0  ">
+                            <div class="">
+                                <div class="card mx-auto" style="width: 18rem;">
+                                    <img src="https://images.unsplash.com/photo-1656110899438-ea993f5e3f9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-sm-3 col-12 swiper-slide  m-0 p-0  ">
+                            <div class="">
+                                <div class="card mx-auto" style="width: 18rem;">
+                                    <img src="https://images.unsplash.com/photo-1656110899438-ea993f5e3f9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
+
+
             </div>
         </div>
 
-        <div class="col-12">
-            <div class="row m-0 p-0">
+        <div class="col-12  py-sm-5">
+            <div class="row m-0 p-0 card border py-5">
                 <div class="col-12">
                     <h2>Events</h2>
                 </div>
                 <div class="col-12 swiper mySwiper">
                     <ul class="m-0 p-0  swiper-wrapper">
-                        <li class="row m-0 p-0   swiper-slide  mx-2">
-                            <div class="col-4 m-0 p-0 d-flex flex-column text-sm-center  text-start">
+                        <li class="row m-0 p-0 py-3  swiper-slide  mx-2">
+                            <div class="col-4 m-0 p-0   d-flex flex-column text-sm-center  text-start">
                                 <h6 class="text-secondary">10 December 2022</h6>
                                 <small class="p-0 m-0 ">Mahidol University</small>
                             </div>
@@ -114,8 +167,8 @@
                                 <h1 class="fs-sm-1 fs-5">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h1>
                             </div>
                         </li>
-                        <li class="row m-0 p-0   swiper-slide  mx-2">
-                            <div class="col-4 m-0 p-0 d-flex flex-column text-sm-center  text-start">
+                        <li class="row m-0 p-0 py-3  swiper-slide  mx-2">
+                            <div class="col-4 m-0 p-0  d-flex flex-column text-sm-center  text-start">
                                 <h6 class="text-secondary">10 December 2022</h6>
                                 <small class="p-0 m-0 ">Mahidol University</small>
                             </div>
@@ -128,61 +181,51 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="row m-0 p-0">
-            <div class="col-12 col-sm-4  p-0 pl-0   my-3 ">
-                <div class="row bg-light  h-100 m-0 p-0  patt">
-                    <div class="col-12 py-3 p-sm-4  text-dark  ">
-                        <div class="row m-0  p-0 d-flex justify-content-center mb-3">
-                            <hr>
-                            <div class="col-6 text-start m-0 p-0 ">
-                                <h5 class="text-uppercase font-weight-bold p-0 m-0">Newsupdate</h5>
-                            </div>
-                            <div class="col-6 text-right m-0 p-0 ">
-                                <a href="./news.php">More</a>
-                            </div>
-                        </div>
-                        <div class="row p-0 m-0 " id="news">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4  p-0 pl-0  pl-sm-3 my-3 ">
-                <div class="row bg-light  h-100 m-0 p-0  patt">
-                    <div class="col-12 py-3 p-sm-4 text-dark  ">
-                        <div class="row m-0 p-0 d-flex justify-content-between mb-3">
-                            <hr>
-                            <div class="col-6 text-start m-0 p-0 ">
-                                <h5 class="text-uppercase font-weight-bold p-0 m-0">Download</h5>
-                            </div>
-                            <div class="col-6 text-right m-0 p-0 ">
-                                <a href="./file.php">More</a>
-                            </div>
-                        </div>
-                        <ul class="" id="download">
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4  p-0 pl-0  pl-sm-3 my-3 ">
-                <div class="row bg-light  h-100 m-0 p-0  patt">
-                    <div class="col-12 py-3 p-sm-4 text-dark  ">
-                        <div class="row m-0 p-0 d-flex justify-content-between mb-3">
-                            <hr>
-                            <div class="col-6 text-start m-0 p-0 ">
-                                <h5 class="text-uppercase font-weight-bold p-0 m-0">Activity</h5>
-                            </div>
-                            <div class="col-6 text-right m-0 p-0 ">
-                                <a href="./activity.php">More</a>
-                            </div>
-                        </div>
-                        <ul class="" id="activity">
 
-                        </ul>
+        <div class="col-12  py-sm-5">
+            <div class="row m-0 p-0 card border py-5">
+                <div class="row m-0 p-0">
+                    <div class="col-8 m-0 p-0 text-start">
+                        <h2>Newsletter</h2>
+                    </div>
+                    <div class="col-4 m-0 p-0 text-end">
+                        <h6>See all</h6>
                     </div>
 
                 </div>
+                <div class="col-12">
+                    <ul class="m-0 p-0  text-center">
+                        <li class="row m-0 p-0   mx-2">
+                            <div class="col-12 m-0 p-0 ">
+                                <h1 class="fs-sm-1 fs-5">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h1>
+                            </div>
+                        </li>
+                        <li class="row m-0 p-0   mx-2">
+                            <div class="col-12 m-0 p-0 ">
+                                <h1 class="fs-sm-1 fs-5">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h1>
+                            </div>
+                        </li>
+                        <li class="row m-0 p-0   mx-2">
+                            <div class="col-12 m-0 p-0 ">
+                                <h1 class="fs-sm-1 fs-5">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h1>
+                            </div>
+                        </li>
+                        <li class="row m-0 p-0   mx-2">
+                            <div class="col-12 m-0 p-0 ">
+                                <h1 class="fs-sm-1 fs-5">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h1>
+                            </div>
+                        </li>
+                        <li class="row m-0 p-0   mx-2">
+                            <div class="col-12 m-0 p-0 ">
+                                <h1 class="fs-sm-1 fs-5">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h1>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
-        </div> -->
+        </div>
+
         <div class="row m-0 p-0">
             <div class="col-12  p-0   my-3 ">
                 <div class="row  h-100 m-0 text-center py-4 ">
