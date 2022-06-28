@@ -15,21 +15,19 @@ function newsrender() {
                 for (var i = 0; i < data.length; i++) {
                     $news = `
                     
-                    <div class=" col-sm-3 col-12 swiper-slide ">
-                    <div class="">
-                    <div class="card mx-auto shadow-sm p-2" style="width: 18rem;">
-                    <a href="./single_news.php?id=${data[i].id}" data-id="${data[i].id}" > 
-                            <img src="https://info-Mugh.com/bos/${data[i].image}"alt="${data[i].name}" class="card-img-top" alt="...">
+                <div class=" col-sm-3 col-12 swiper-slide  ">
+                    <div class="shadow-sm">
+                    <a href = "./single_news.php?id=${data[i].id}" class="text-decoration-none" data-id="${data[i].id}" > 
+                        <div class="card mx-auto" style="width: 18rem;">
+                             <img src="https://info-Mugh.com/bos/${data[i].image}" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h3 class="card-text text-dark">${data[i].name}</h3>
-                                <small>${data[i].date}</small> <br>
-                                <small>${data[i].type}</small>
-                                </div>
-                                </a>
-                        </div>
+                        <b class="fw-bold">${data[i].type}</b>
+                        <h4 class="card-text">${data[i].name}</h4>
+                        <small class="text-muted">${data[i].date}</small>
                     </div>
+                    </a>
                 </div>
-
+               
                 
            `
                     $('#news').append($news);
@@ -40,6 +38,7 @@ function newsrender() {
         },
         error: function (err) {
             consolelog(err)
+
         }
     })
 

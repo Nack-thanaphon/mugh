@@ -1,4 +1,4 @@
-<nav class="navbar bg-secondary navbar-expand-xl navbar-dark">
+<nav class="navbar navbar-expand-xl navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand d-flex justify-content-between " href="./">
             <!-- <img class="d-none d-sm-block" src="./img/logo/logo2.png" alt=""> -->
@@ -10,7 +10,7 @@
         </a>
         <ul class="navbar-nav navbar-top ">
             <li class="nav-item  d-sm-flex flex-sm-row d-none">
-                <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="./about.php">About <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item d-sm-flex flex-sm-row d-none">
                 <a class="nav-link" href="#">Education</a>
@@ -19,43 +19,42 @@
                 <a class="nav-link " href="#">Research</a>
             </li>
             <li class="nav-item d-sm-flex flex-sm-row d-none">
-                <a class="nav-link " href="#">News</a>
+                <a class="nav-link " href="./news.php">News</a>
             </li>
             <li class="nav-item d-sm-flex flex-sm-row d-none">
-                <a class="nav-link " href="#">Events</a>
+                <a class="nav-link " href="./activity.php">Events</a>
             </li>
             <li class="nav-item d-sm-flex flex-sm-row d-none">
-                <a class="nav-link " href="#">Newsletter</a>
+                <a class="nav-link " href="./newsletter.php">Newsletter</a>
             </li>
 
             <button class="btn btn d-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </ul>
-        <div class="offcanvas offcanvas-end bg-secondary" id="navbarOffcanvas" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas offcanvas-end bg-white " id="navbarOffcanvas" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body ">
-
-                <ul class="navbar-nav ml-auto  d-flex flex-column">
+                <ul class="navbar-nav ml-auto  d-flex flex-column ">
                     <li class="nav-item ">
-                        <a href="#!" class="nav-link text-left">Home</a>
+                        <a href="./" class="nav-link text-left  text-dark">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#!" class="nav-link text-left">History</a>
+                        <a href="#!" class="nav-link text-left text-dark">History</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#!" class="nav-link text-left">Staff</a>
+                        <a href="#!" class="nav-link text-left text-dark">Staff</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#!" class="nav-link text-left">Gallery</a>
+                        <a href="./gallery.php" class="nav-link text-left text-dark">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#!" class="nav-link text-left">Link to</a>
+                        <a href="#!" class="nav-link text-left text-dark">Link to</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#!" class="nav-link text-left">Login</a>
+                        <a href="https://www.info-mugh.com/" target="blank" class="nav-link text-left text-dark">Login</a>
                     </li>
                 </ul>
 
@@ -63,14 +62,3 @@
         </div>
     </div>
 </nav>
-
-
-
-<div class="text-center" id="text-slide">
-    <marquee class="mt-2" behavior='scroll' direction='left' scrollamount='6'>
-        <a href="https://hurs.mahidol.ac.th" class="text-white" target="blank">
-            <h4>Welcome to MUGH | Mahidol University Global Health</h4>
-        </a>
-    </marquee>
-
-</div>

@@ -16,17 +16,16 @@ function activity() {
             data = data.result;
             if (data != '') {
                 for (var i = 0; i < data.length; i++) {
-                    ac = `             
-                        <li class="mb-3">
-                        <small class="text-primary">${data[i].end_date}</small> <br>
-                        
-                        <a href="./single_activity.php?event=${data[i].id}" class="row m-0 p-0">
-                        <small class="p-0 m-0 col-12 text-start"><span class="text-dark">หัวข้อ :</span> ${data[i].title}</small>
-                        </a>
-                        <small class="text-start mb-2 p-0 text-secondary">เวลา : <i class="fas fa-clock"></i> ${data[i].start_time} - ${data[i].end_time}</small> <br>
-                        <small>สถานที่: <span>${data[i].address}</span></small>
-                      
-                    </li>      
+                    ac = ` 
+                    <li class="row m-0 p-0 py-3  swiper-slide  mx-2">
+                    <div class="col-4 m-0 p-0   d-flex flex-column text-sm-center  text-start">
+                        <h6 class="text-secondary">${data[i].end_date}</h6>
+                        <small class="p-0 m-0 ">${data[i].address}</small>
+                    </div>
+                    <div class="col-8 m-0 p-0 ">
+                        <h1 class="fs-sm-1 fs-5">${data[i].title}</h1>
+                    </div>
+                </li>
            `
                     $('#activity').append(ac);
                 };

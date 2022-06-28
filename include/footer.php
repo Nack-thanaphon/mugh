@@ -23,15 +23,17 @@
                 <h5 class="text-uppercase fw-bold mb-4">
                     Service Links
                 </h5>
-                <a href="https://mahidol.ac.th/" target="blank" class="">
-                    <img src="./img/logo/Picture1.png" class="w-100 w-xs-20 pb-3" alt="">
-                </a>
-                <a href="https://aihd.mahidol.ac.th/main/AIHD_EN/" target="blank" class="">
-                    <img src="./img/logo/Picture2.png" class="w-100 w-20 pb-3" alt="">
-                </a>
-                <a href="https://aun-hpn.or.th/" target="blank" class="">
-                    <img src="./img/logo/Picture3.png" class="w-100 w-20 pb-3 pr-5" alt="">
-                </a>
+                <div class="row m-0 p-0">
+                    <a href="https://mahidol.ac.th/" target="blank" class="col-4 col-sm-12 m-0 p-0">
+                        <img src="./img/logo/Picture1.png" class="w-100  pb-3" alt="">
+                    </a>
+                    <a href="https://aihd.mahidol.ac.th/main/AIHD_EN/" target="blank" class="col-4 col-sm-12 m-0 p-0">
+                        <img src="./img/logo/Picture2.png" class="w-100  pb-3" alt="">
+                    </a>
+                    <a href="https://aun-hpn.or.th/" target="blank" class="col-4 col-sm-12 m-0 p-0">
+                        <img src="./img/logo/Picture3.png" class="w-100  pb-3 pr-5" alt="">
+                    </a>
+                </div>
 
             </div>
             <!-- Grid column -->
@@ -65,9 +67,7 @@
             © 2021 Copyright:
             <a class="text-reset fw-bold" href="https://www.Mugh.or.th"><strong>Mugh.or.th</strong></a>
         </div>
-        <!-- Left -->
 
-        <!-- Right -->
         <div>
             <a href="" class="mx-2 text-reset">
                 <i class="fab fa-facebook-f"></i>

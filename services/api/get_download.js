@@ -15,12 +15,18 @@ function download() {
             data = data.result;
             if (data != '') {
                 for (var i = 0; i < data.length; i++) {
-                    $fd = `<li class="mb-3 p-0">
-                <small class="text-secondary">${data[i].date}</small> <br>
-                <small>ชนิดเอกสาร : ${data[i].group}</small>
-                <a href="./single_file.php?f=${data[i].id}" class="row m-0 p-0">
-                <small class="p-0 m-0 col-12 text-start">${data[i].name}</small>
-                </a> </li>
+                    $fd = `
+                    
+                    <li class="row m-0 p-0  mx-2">
+                    <a href="./single_file.php?f=${data[i].id}" class="row m-0 p-0 text-decoration-none">
+                            <div class="col-4 m-0 p-0 ">
+                                <h1 class="fs-sm-1 fs-5 text-start">${data[i].date}</h1>
+                            </div>
+                            <div class="col-8 m-0 p-0 ">
+                                <h4 class="fs-sm-1 fs-5">${data[i].name}</h4>
+                            </div>
+                            </a>
+                    </li>
            `
                     $('#download').append($fd);
                 };

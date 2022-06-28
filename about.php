@@ -10,16 +10,15 @@
             <!-- <small>Lorem, ipsum dolor./Lorem, ipsum dolor./Lorem, ipsum dolor./Lorem, ipsum dolor./</small> -->
         </div>
         <div class=" col-md-3 col-12 mt-5">
-
             <div class="position-sticky  mb-5" style="top: 2rem;">
                 <div class="text-black rounded">
                     <div class="bg-white shadow-sm p-3 text-white ">
-                        <h4 class="fst-italic text-center text-dark">About us</h4>
-                        <div class="nav flex-column nav-pills text-start" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                            <a class="nav-link active  text-uppercase" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"> Our
+          
+                        <div class="nav flex-column nav-pills me-3 text-dark" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" type="button"  id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"> Our
                                 GOAL</a>
-                            <a class="nav-link text-uppercase" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Our Mission</a>
-                            <a class="nav-link text-uppercase" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Our Objectives</a>
+                            <a class="nav-link text-uppercase"  type="button" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Our Mission</a>
+                            <a class="nav-link text-uppercase"  type="button" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Our Objectives</a>
 
                         </div>
                     </div>

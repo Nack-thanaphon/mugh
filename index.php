@@ -1,5 +1,20 @@
 <?php include './include/header.php'; ?>
 <?php include './include/navbar.php'; ?>
+
+<div class="col-12 text-center py-2 my-auto" id="text-slide">
+
+    <div class="d-flex justify-content-between align-items-center breaking-news">
+        <div class="d-flex flex-row flex-grow-1 flex-fill justify-content-center   py-2 text-primary px-1 news"><span class="d-flex align-items-center">
+                <h4 class="p-0 m-0">&nbsp;Announcement</h4>
+            </span></div>
+        <marquee class="news-scroll " behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+            <a href="https://hurs.mahidol.ac.th" target="blank">
+                <h3 class="m-0 p-0 text-white">Welcome to MUGH | Mahidol University Global Health</h3>
+            </a>
+        </marquee>
+
+    </div>
+</div>
 <?php include './pages/modal.php'; ?>
 
 
@@ -10,7 +25,6 @@
         <div class="row m-0 p-0 ">
             <div class="col-12 m-0 p-0">
                 <div class="row my-0  m-0 p-0  ">
-
                     <div class="col-12 col-sm-12  main_card  d-none d-sm-block ">
                         <div class="row m-0 p-0 d-flex justify-content-end">
                             <div class="col-12 col-sm-6 p-4 p-sm-5 text-white my-auto ">
@@ -28,15 +42,15 @@
 
 
                                 <a href="./about.php" class="btn btn-primary text-white d-none d-sm-block col-12" style="margin-top:150px">
-                                    <p class="text-uppercase font-weight-bold p-0 m-0">Learn More</p>
+                                    <h3 class="text-uppercase font-weight-bold p-0 m-0">Learn More</h3>
                                 </a>
 
                             </div>
 
                         </div>
                     </div>
-                    <div class="col-12 col-sm-12  d-sm-none d-block  main_card_mo  ">
-                        <div class="row m-0 p-0 d-flex justify-content-end">
+                    <div class="col-12 col-sm-12  d-sm-none d-block m-0 p-0  main_card_mo  ">
+                        <div class="row m-0 p-0 d-flex justify-content-end main_card_bg">
                             <div class="col-12 col-sm-6 p-4 p-sm-5 text-white my-auto ">
 
                                 <div class="my-4 text-justify  bg-transparent shadow-sm card p-3 d-sm-none">
@@ -79,70 +93,32 @@
         <div class="col-12 py-sm-5">
             <div class="row m-0 p-0 card  border py-5">
                 <div class="col-12">
-                    <h2>Newsupdate</h2>
+                    <div class="row m-0 p-0">
+                        <div class="col-8">
+                            <h2 class="text-uppercase fw-bold">News update</h2>
+                        </div>
+                        <div class="col-4 text-end">
+                            <a href="./news.php" class="text-decoration-none">
+                                <h3 class="btn btn badge bg-primary text-wrap">SEE ALL ></h3>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="swiper mySwiper ">
-                    <div class="swiper-wrapper ">
-                        <div class=" col-sm-3 col-12 swiper-slide   m-0 p-0 ">
-                            <div class="">
-                                <div class="card mx-auto" style="width: 18rem;">
+                    <div class="swiper-wrapper " id="news">
+                        <!-- <div class=" col-sm-3 col-12 swiper-slide   m-0 p-0 "> -->
+                        <!-- <div class=""> -->
+                        <!-- <div class="card mx-auto" style="width: 18rem;">
                                     <img src="https://images.unsplash.com/photo-1656110899438-ea993f5e3f9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <b class="fw-bold">Lorem, ipsum dolor.</b>
+                                        <h4 class="card-text">Some quick example text to build on </h4>
+                                        <small class="text-muted">Lorem ipsum dolor sit.</small>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-sm-3 col-12 swiper-slide   m-0 p-0 ">
-                            <div class="">
-                                <div class="card mx-auto" style="width: 18rem;">
-                                    <img src="https://images.unsplash.com/photo-1656110899438-ea993f5e3f9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-sm-3 col-12 swiper-slide   m-0 p-0 ">
-                            <div class="">
-                                <div class="card mx-auto" style="width: 18rem;">
-                                    <img src="https://images.unsplash.com/photo-1656110899438-ea993f5e3f9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-sm-3 col-12 swiper-slide   m-0 p-0 ">
-                            <div class="">
-                                <div class="card mx-auto" style="width: 18rem;">
-                                    <img src="https://images.unsplash.com/photo-1656110899438-ea993f5e3f9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-sm-3 col-12 swiper-slide  m-0 p-0  ">
-                            <div class="">
-                                <div class="card mx-auto" style="width: 18rem;">
-                                    <img src="https://images.unsplash.com/photo-1656110899438-ea993f5e3f9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-sm-3 col-12 swiper-slide  m-0 p-0  ">
-                            <div class="">
-                                <div class="card mx-auto" style="width: 18rem;">
-                                    <img src="https://images.unsplash.com/photo-1656110899438-ea993f5e3f9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                </div> -->
+                        <!-- </div> -->
+                        <!-- </div> -->
+
                     </div>
 
                 </div>
@@ -154,11 +130,20 @@
         <div class="col-12  py-sm-5">
             <div class="row m-0 p-0 card border py-5">
                 <div class="col-12">
-                    <h2>Events</h2>
+                    <div class="row m-0 p-0 mb-3">
+                        <div class="col-8">
+                            <h2 class="text-uppercase fw-bold m-0 p-0">events</h2>
+                        </div>
+                        <div class="col-4 text-end">
+                            <a href="./activity.php" class="text-decoration-none">
+                                <h3 class="btn btn badge bg-primary text-wrap">SEE ALL ></h3>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 swiper mySwiper">
-                    <ul class="m-0 p-0  swiper-wrapper">
-                        <li class="row m-0 p-0 py-3  swiper-slide  mx-2">
+                    <ul class="m-0 p-0  swiper-wrapper " id="activity">
+                        <!-- <li class="row m-0 p-0 py-3  swiper-slide  mx-2">
                             <div class="col-4 m-0 p-0   d-flex flex-column text-sm-center  text-start">
                                 <h6 class="text-secondary">10 December 2022</h6>
                                 <small class="p-0 m-0 ">Mahidol University</small>
@@ -166,17 +151,7 @@
                             <div class="col-8 m-0 p-0 ">
                                 <h1 class="fs-sm-1 fs-5">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h1>
                             </div>
-                        </li>
-                        <li class="row m-0 p-0 py-3  swiper-slide  mx-2">
-                            <div class="col-4 m-0 p-0  d-flex flex-column text-sm-center  text-start">
-                                <h6 class="text-secondary">10 December 2022</h6>
-                                <small class="p-0 m-0 ">Mahidol University</small>
-                            </div>
-                            <div class="col-8 m-0 p-0 ">
-                                <h1 class="fs-sm-1 fs-5">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h1>
-                            </div>
-                        </li>
-
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -185,42 +160,30 @@
         <div class="col-12  py-sm-5">
             <div class="row m-0 p-0 card border py-5">
                 <div class="row m-0 p-0">
-                    <div class="col-8 m-0 p-0 text-start">
-                        <h2>Newsletter</h2>
-                    </div>
-                    <div class="col-4 m-0 p-0 text-end">
-                        <h6>See all</h6>
+                    <div class="col-12">
+                        <div class="row m-0 p-0 mb-3">
+                            <div class="col-8 ">
+                                <h2 class="text-uppercase fw-bold m-0 p-0">Newsletter</h2>
+                            </div>
+                            <div class="col-4 text-end">
+                                <a href="./newsletter.php" class="text-decoration-none">
+                                    <h3 class="btn btn badge bg-primary text-wrap">SEE ALL ></h3>
+                                </a>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
                 <div class="col-12">
-                    <ul class="m-0 p-0  text-center">
-                        <li class="row m-0 p-0   mx-2">
-                            <div class="col-12 m-0 p-0 ">
-                                <h1 class="fs-sm-1 fs-5">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h1>
+                    <ul class="m-0 p-0" id="download">
+                        <!-- <li class="row m-0 p-0  mx-2">
+                            <div class="col-4 m-0 p-0 ">
+                                <h1 class="fs-sm-1 fs-5 text-start">Lorem, ipsum.</h1>
                             </div>
-                        </li>
-                        <li class="row m-0 p-0   mx-2">
-                            <div class="col-12 m-0 p-0 ">
-                                <h1 class="fs-sm-1 fs-5">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h1>
+                            <div class="col-8 m-0 p-0 ">
+                                <h4 class="fs-sm-1 fs-5">Lorem ipsum dolor sit amet.Lorem </h4>
                             </div>
-                        </li>
-                        <li class="row m-0 p-0   mx-2">
-                            <div class="col-12 m-0 p-0 ">
-                                <h1 class="fs-sm-1 fs-5">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h1>
-                            </div>
-                        </li>
-                        <li class="row m-0 p-0   mx-2">
-                            <div class="col-12 m-0 p-0 ">
-                                <h1 class="fs-sm-1 fs-5">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h1>
-                            </div>
-                        </li>
-                        <li class="row m-0 p-0   mx-2">
-                            <div class="col-12 m-0 p-0 ">
-                                <h1 class="fs-sm-1 fs-5">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h1>
-                            </div>
-                        </li>
-
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -279,19 +242,18 @@
 
         });
 
+        function toggle() {
+            let viewportWidth = window.innerWidth;
+            var myModal = document.getElementById('myModal')
 
-        // function toggle() {
-        //     let viewportWidth = window.innerWidth;
-        //     var myModal = document.getElementById('myModal')
+            if (viewportWidth < 900) {
+                new bootstrap.Modal(myModal).hide();
+            } else {
+                new bootstrap.Modal(myModal).show();
+            }
+        }
 
-        //     if (viewportWidth < 900) {
-        //         new bootstrap.Modal(myModal).hide();
-        //     } else {
-        //         new bootstrap.Modal(myModal).show();
-        //     }
-        // }
-
-        // toggle();
+        toggle();
     </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 

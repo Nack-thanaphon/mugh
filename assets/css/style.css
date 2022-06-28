@@ -9,7 +9,6 @@
     padding: 0%;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-weight: 400;
     font-family: THSarabun_Bold;
 }
 
@@ -20,7 +19,7 @@ body{
 /* design root */
 :root {
     --main: #0077B6;
-    --secound: #10AF8B;
+    --secound: #007AFF;
     --third: #1D5671;
     --forth: #fefefe;
     --font1: 1.5rem;
@@ -30,8 +29,15 @@ body{
 
 /* Navbar */
 
-#navbar-bg {
-    background-color: var(--third) !important;
+nav {
+    background-color: #001D3D !important;
+    color:inherit !important;
+}
+
+
+.nav-link{
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 
@@ -247,7 +253,7 @@ overflow: hidden;
   
 }
 #singlenews .img_new:hover{
-    transform: scale(1.1);
+    transform: scale(1);
 }
 
 
@@ -262,17 +268,21 @@ overflow: hidden;
 }
 
 .news-card-all img {
+   
     width: 100%;
     object-fit: cover;
     height: 150px;
+   
 }
 
 .news-card-all {
     transition: .2s;
+    padding: 10px !important;
+
 }
 
 .news-card-all:hover {
-    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #download li{
@@ -666,22 +676,9 @@ footer b {
      background-repeat: no-repeat;
  }
 
-.member_card{
-    background-color: rgba(2, 2, 2);
-    background-image: url('https://img.freepik.com/free-vector/solidarity-concept-illustration_114360-6286.jpg?t=st=1651978307~exp=1651978907~hmac=12927bd0bca4b83f0db5e703e182f98cae74206684afe25d9b038c50734ec732&w=900');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.about_card{
-    background-color: rgba(2, 2, 2);
-    background-image: url('https://img.freepik.com/free-vector/personal-goals-concept-illustration_114360-5616.jpg?t=st=1651978212~exp=1651978812~hmac=5de9ead876e8d0a6e8b945b8c4f262755cf906d850e61ffb5aaa412aac823f63&w=740');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 .main_card_bg{
+
+    background-size: cover;
     background-color: rgba(2, 2, 2,0.5);
 }
 
@@ -711,5 +708,20 @@ footer b {
  #text-slide{
      background-color:var(--secound);
  }
+ #text-slide>a{
+   text-decoration: none;
+}
+
+
+.news{
+    width: 160px;
+    background-color:#FED966;
+}
+.news-scroll a{
+    text-decoration: none
+}
+
+
+ 
 
 
