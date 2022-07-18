@@ -2,7 +2,6 @@
 <?php include './include/navbar.php'; ?>
 
 <div class="col-12 text-center py-2 my-auto" id="text-slide">
-
     <div class="d-flex justify-content-between align-items-center breaking-news">
         <div class="d-flex flex-row flex-grow-1 flex-fill justify-content-center   py-2 text-primary px-1 news"><span class="d-flex align-items-center">
                 <h4 class="p-0 m-0">&nbsp;Announcement</h4>
@@ -16,7 +15,6 @@
     </div>
 </div>
 <?php include './pages/modal.php'; ?>
-
 
 
 <body>
